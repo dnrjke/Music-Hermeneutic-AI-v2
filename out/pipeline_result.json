@@ -5,17 +5,17 @@
       "duration_s": 131.3,
       "n_frames": 22627,
       "otsu_threshold": 1.0928,
-      "n_events": 577,
-      "density_per_s": 4.39,
+      "n_events": 809,
+      "density_per_s": 6.16,
       "window_stats": {
         "n_windows": 33,
-        "total_events": 577,
-        "count_min": 0,
-        "count_max": 32,
-        "count_median": 20.0,
-        "count_mean": 17.48,
-        "count_std": 8.73,
-        "count_iqr": 15.0
+        "total_events": 809,
+        "count_min": 3,
+        "count_max": 39,
+        "count_median": 27.0,
+        "count_mean": 24.52,
+        "count_std": 10.71,
+        "count_iqr": 19.0
       }
     },
     {
@@ -23,17 +23,17 @@
       "duration_s": 140.6,
       "n_frames": 24219,
       "otsu_threshold": 1.2292,
-      "n_events": 676,
-      "density_per_s": 4.81,
+      "n_events": 684,
+      "density_per_s": 4.87,
       "window_stats": {
         "n_windows": 36,
-        "total_events": 676,
+        "total_events": 684,
         "count_min": 0,
         "count_max": 38,
-        "count_median": 15.0,
-        "count_mean": 18.78,
-        "count_std": 10.85,
-        "count_iqr": 19.25
+        "count_median": 17.5,
+        "count_mean": 19.0,
+        "count_std": 10.39,
+        "count_iqr": 15.0
       }
     },
     {
@@ -41,17 +41,17 @@
       "duration_s": 292.4,
       "n_frames": 50366,
       "otsu_threshold": 2.8227,
-      "n_events": 703,
-      "density_per_s": 2.4,
+      "n_events": 1208,
+      "density_per_s": 4.13,
       "window_stats": {
         "n_windows": 74,
-        "total_events": 703,
+        "total_events": 1208,
         "count_min": 0,
-        "count_max": 59,
-        "count_median": 9.5,
-        "count_mean": 9.5,
-        "count_std": 9.21,
-        "count_iqr": 12.75
+        "count_max": 37,
+        "count_median": 16.0,
+        "count_mean": 16.32,
+        "count_std": 8.22,
+        "count_iqr": 9.0
       }
     },
     {
@@ -59,16 +59,16 @@
       "duration_s": 123.6,
       "n_frames": 21295,
       "otsu_threshold": 1.3076,
-      "n_events": 597,
-      "density_per_s": 4.83,
+      "n_events": 702,
+      "density_per_s": 5.68,
       "window_stats": {
         "n_windows": 31,
-        "total_events": 597,
+        "total_events": 702,
         "count_min": 0,
-        "count_max": 31,
-        "count_median": 20.0,
-        "count_mean": 19.26,
-        "count_std": 6.45,
+        "count_max": 34,
+        "count_median": 23.0,
+        "count_mean": 22.65,
+        "count_std": 6.34,
         "count_iqr": 5.0
       }
     }

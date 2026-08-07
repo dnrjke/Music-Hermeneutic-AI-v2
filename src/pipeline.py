@@ -17,7 +17,7 @@ import numpy as np
 from config import audio_paths, OUT_DIR, SURVEY_DIR
 from audio_io import load_mono, duration_s
 from onset import superflux_envelope, band_envelopes
-from peak_pick import peaks, peaks_with_mid, otsu
+from peak_pick import peaks_adaptive, otsu
 from counter import count_events, summary, save
 from survey_gen import generate_survey, write_survey_template
 
@@ -31,7 +31,7 @@ def run_track(audio_path: Path) -> dict:
     env, times = superflux_envelope(mono)
     bands = band_envelopes(mono)
     thr = otsu(env[np.isfinite(env)])
-    pk = peaks_with_mid(env, bands["mid"], times)
+    pk = peaks_adaptive(env, times, bands, dur)
 
     counts = count_events(pk, dur)
     stats = summary(counts)
