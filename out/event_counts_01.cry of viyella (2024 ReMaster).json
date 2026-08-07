@@ -1,0 +1,214 @@
+{
+  "track": "01.cry of viyella (2024 ReMaster).wav",
+  "window_s": 4.0,
+  "summary": {
+    "n_windows": 33,
+    "total_events": 577,
+    "count_min": 0,
+    "count_max": 32,
+    "count_median": 20.0,
+    "count_mean": 17.48,
+    "count_std": 8.73,
+    "count_iqr": 15.0
+  },
+  "windows": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 4.0,
+      "count": 3
+    },
+    {
+      "index": 1,
+      "start_s": 4.0,
+      "end_s": 8.0,
+      "count": 10
+    },
+    {
+      "index": 2,
+      "start_s": 8.0,
+      "end_s": 12.0,
+      "count": 10
+    },
+    {
+      "index": 3,
+      "start_s": 12.0,
+      "end_s": 16.0,
+      "count": 12
+    },
+    {
+      "index": 4,
+      "start_s": 16.0,
+      "end_s": 20.0,
+      "count": 14
+    },
+    {
+      "index": 5,
+      "start_s": 20.0,
+      "end_s": 24.0,
+      "count": 11
+    },
+    {
+      "index": 6,
+      "start_s": 24.0,
+      "end_s": 28.0,
+      "count": 9
+    },
+    {
+      "index": 7,
+      "start_s": 28.0,
+      "end_s": 32.0,
+      "count": 6
+    },
+    {
+      "index": 8,
+      "start_s": 32.0,
+      "end_s": 36.0,
+      "count": 21
+    },
+    {
+      "index": 9,
+      "start_s": 36.0,
+      "end_s": 40.0,
+      "count": 26
+    },
+    {
+      "index": 10,
+      "start_s": 40.0,
+      "end_s": 44.0,
+      "count": 22
+    },
+    {
+      "index": 11,
+      "start_s": 44.0,
+      "end_s": 48.0,
+      "count": 24
+    },
+    {
+      "index": 12,
+      "start_s": 48.0,
+      "end_s": 52.0,
+      "count": 32
+    },
+    {
+      "index": 13,
+      "start_s": 52.0,
+      "end_s": 56.0,
+      "count": 20
+    },
+    {
+      "index": 14,
+      "start_s": 56.0,
+      "end_s": 60.0,
+      "count": 13
+    },
+    {
+      "index": 15,
+      "start_s": 60.0,
+      "end_s": 64.0,
+      "count": 13
+    },
+    {
+      "index": 16,
+      "start_s": 64.0,
+      "end_s": 68.0,
+      "count": 21
+    },
+    {
+      "index": 17,
+      "start_s": 68.0,
+      "end_s": 72.0,
+      "count": 22
+    },
+    {
+      "index": 18,
+      "start_s": 72.0,
+      "end_s": 76.0,
+      "count": 28
+    },
+    {
+      "index": 19,
+      "start_s": 76.0,
+      "end_s": 80.0,
+      "count": 25
+    },
+    {
+      "index": 20,
+      "start_s": 80.0,
+      "end_s": 84.0,
+      "count": 29
+    },
+    {
+      "index": 21,
+      "start_s": 84.0,
+      "end_s": 88.0,
+      "count": 25
+    },
+    {
+      "index": 22,
+      "start_s": 88.0,
+      "end_s": 92.0,
+      "count": 30
+    },
+    {
+      "index": 23,
+      "start_s": 92.0,
+      "end_s": 96.0,
+      "count": 29
+    },
+    {
+      "index": 24,
+      "start_s": 96.0,
+      "end_s": 100.0,
+      "count": 10
+    },
+    {
+      "index": 25,
+      "start_s": 100.0,
+      "end_s": 104.0,
+      "count": 9
+    },
+    {
+      "index": 26,
+      "start_s": 104.0,
+      "end_s": 108.0,
+      "count": 15
+    },
+    {
+      "index": 27,
+      "start_s": 108.0,
+      "end_s": 112.0,
+      "count": 23
+    },
+    {
+      "index": 28,
+      "start_s": 112.0,
+      "end_s": 116.0,
+      "count": 25
+    },
+    {
+      "index": 29,
+      "start_s": 116.0,
+      "end_s": 120.0,
+      "count": 24
+    },
+    {
+      "index": 30,
+      "start_s": 120.0,
+      "end_s": 124.0,
+      "count": 14
+    },
+    {
+      "index": 31,
+      "start_s": 124.0,
+      "end_s": 128.0,
+      "count": 2
+    },
+    {
+      "index": 32,
+      "start_s": 128.0,
+      "end_s": 131.347,
+      "count": 0
+    }
+  ]
+}

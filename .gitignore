@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+
+# 오디오 파일 (대용량)
+audio/
+survey/clips/
+out/sonify/
+
+# 설문 정답 (블라인드 유지)
+survey/ground_truth.json

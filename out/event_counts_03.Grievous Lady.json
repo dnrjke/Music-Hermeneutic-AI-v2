@@ -1,0 +1,232 @@
+{
+  "track": "03.Grievous Lady.wav",
+  "window_s": 4.0,
+  "summary": {
+    "n_windows": 36,
+    "total_events": 676,
+    "count_min": 0,
+    "count_max": 38,
+    "count_median": 15.0,
+    "count_mean": 18.78,
+    "count_std": 10.85,
+    "count_iqr": 19.25
+  },
+  "windows": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 4.0,
+      "count": 17
+    },
+    {
+      "index": 1,
+      "start_s": 4.0,
+      "end_s": 8.0,
+      "count": 11
+    },
+    {
+      "index": 2,
+      "start_s": 8.0,
+      "end_s": 12.0,
+      "count": 9
+    },
+    {
+      "index": 3,
+      "start_s": 12.0,
+      "end_s": 16.0,
+      "count": 8
+    },
+    {
+      "index": 4,
+      "start_s": 16.0,
+      "end_s": 20.0,
+      "count": 13
+    },
+    {
+      "index": 5,
+      "start_s": 20.0,
+      "end_s": 24.0,
+      "count": 11
+    },
+    {
+      "index": 6,
+      "start_s": 24.0,
+      "end_s": 28.0,
+      "count": 11
+    },
+    {
+      "index": 7,
+      "start_s": 28.0,
+      "end_s": 32.0,
+      "count": 11
+    },
+    {
+      "index": 8,
+      "start_s": 32.0,
+      "end_s": 36.0,
+      "count": 11
+    },
+    {
+      "index": 9,
+      "start_s": 36.0,
+      "end_s": 40.0,
+      "count": 14
+    },
+    {
+      "index": 10,
+      "start_s": 40.0,
+      "end_s": 44.0,
+      "count": 22
+    },
+    {
+      "index": 11,
+      "start_s": 44.0,
+      "end_s": 48.0,
+      "count": 22
+    },
+    {
+      "index": 12,
+      "start_s": 48.0,
+      "end_s": 52.0,
+      "count": 21
+    },
+    {
+      "index": 13,
+      "start_s": 52.0,
+      "end_s": 56.0,
+      "count": 21
+    },
+    {
+      "index": 14,
+      "start_s": 56.0,
+      "end_s": 60.0,
+      "count": 30
+    },
+    {
+      "index": 15,
+      "start_s": 60.0,
+      "end_s": 64.0,
+      "count": 34
+    },
+    {
+      "index": 16,
+      "start_s": 64.0,
+      "end_s": 68.0,
+      "count": 12
+    },
+    {
+      "index": 17,
+      "start_s": 68.0,
+      "end_s": 72.0,
+      "count": 11
+    },
+    {
+      "index": 18,
+      "start_s": 72.0,
+      "end_s": 76.0,
+      "count": 9
+    },
+    {
+      "index": 19,
+      "start_s": 76.0,
+      "end_s": 80.0,
+      "count": 8
+    },
+    {
+      "index": 20,
+      "start_s": 80.0,
+      "end_s": 84.0,
+      "count": 11
+    },
+    {
+      "index": 21,
+      "start_s": 84.0,
+      "end_s": 88.0,
+      "count": 5
+    },
+    {
+      "index": 22,
+      "start_s": 88.0,
+      "end_s": 92.0,
+      "count": 11
+    },
+    {
+      "index": 23,
+      "start_s": 92.0,
+      "end_s": 96.0,
+      "count": 24
+    },
+    {
+      "index": 24,
+      "start_s": 96.0,
+      "end_s": 100.0,
+      "count": 33
+    },
+    {
+      "index": 25,
+      "start_s": 100.0,
+      "end_s": 104.0,
+      "count": 36
+    },
+    {
+      "index": 26,
+      "start_s": 104.0,
+      "end_s": 108.0,
+      "count": 37
+    },
+    {
+      "index": 27,
+      "start_s": 108.0,
+      "end_s": 112.0,
+      "count": 34
+    },
+    {
+      "index": 28,
+      "start_s": 112.0,
+      "end_s": 116.0,
+      "count": 31
+    },
+    {
+      "index": 29,
+      "start_s": 116.0,
+      "end_s": 120.0,
+      "count": 38
+    },
+    {
+      "index": 30,
+      "start_s": 120.0,
+      "end_s": 124.0,
+      "count": 35
+    },
+    {
+      "index": 31,
+      "start_s": 124.0,
+      "end_s": 128.0,
+      "count": 32
+    },
+    {
+      "index": 32,
+      "start_s": 128.0,
+      "end_s": 132.0,
+      "count": 23
+    },
+    {
+      "index": 33,
+      "start_s": 132.0,
+      "end_s": 136.0,
+      "count": 16
+    },
+    {
+      "index": 34,
+      "start_s": 136.0,
+      "end_s": 140.0,
+      "count": 4
+    },
+    {
+      "index": 35,
+      "start_s": 140.0,
+      "end_s": 140.587,
+      "count": 0
+    }
+  ]
+}

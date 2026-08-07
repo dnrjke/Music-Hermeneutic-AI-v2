@@ -1,0 +1,76 @@
+{
+  "tracks": [
+    {
+      "track": "01.cry of viyella (2024 ReMaster).wav",
+      "duration_s": 131.3,
+      "n_frames": 22627,
+      "otsu_threshold": 1.0928,
+      "n_events": 577,
+      "density_per_s": 4.39,
+      "window_stats": {
+        "n_windows": 33,
+        "total_events": 577,
+        "count_min": 0,
+        "count_max": 32,
+        "count_median": 20.0,
+        "count_mean": 17.48,
+        "count_std": 8.73,
+        "count_iqr": 15.0
+      }
+    },
+    {
+      "track": "03.Grievous Lady.wav",
+      "duration_s": 140.6,
+      "n_frames": 24219,
+      "otsu_threshold": 1.2292,
+      "n_events": 676,
+      "density_per_s": 4.81,
+      "window_stats": {
+        "n_windows": 36,
+        "total_events": 676,
+        "count_min": 0,
+        "count_max": 38,
+        "count_median": 15.0,
+        "count_mean": 18.78,
+        "count_std": 10.85,
+        "count_iqr": 19.25
+      }
+    },
+    {
+      "track": "07.Viyella’s Nightmare.wav",
+      "duration_s": 292.4,
+      "n_frames": 50366,
+      "otsu_threshold": 2.8227,
+      "n_events": 703,
+      "density_per_s": 2.4,
+      "window_stats": {
+        "n_windows": 74,
+        "total_events": 703,
+        "count_min": 0,
+        "count_max": 59,
+        "count_median": 9.5,
+        "count_mean": 9.5,
+        "count_std": 9.21,
+        "count_iqr": 12.75
+      }
+    },
+    {
+      "track": "09.Swift Swing (2024 ReMaster).wav",
+      "duration_s": 123.6,
+      "n_frames": 21295,
+      "otsu_threshold": 1.3076,
+      "n_events": 597,
+      "density_per_s": 4.83,
+      "window_stats": {
+        "n_windows": 31,
+        "total_events": 597,
+        "count_min": 0,
+        "count_max": 31,
+        "count_median": 20.0,
+        "count_mean": 19.26,
+        "count_std": 6.45,
+        "count_iqr": 5.0
+      }
+    }
+  ]
+}
