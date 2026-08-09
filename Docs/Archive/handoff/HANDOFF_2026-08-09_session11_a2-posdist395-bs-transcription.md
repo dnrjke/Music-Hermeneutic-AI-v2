@@ -1,22 +1,21 @@
-# HANDOFF — 2026-08-10 · s4 stem event sculpt 착수 준비
+# HANDOFF — 2026-08-08 · block-gated adaptive 확립 + s4 피아노 진행중
 
 이 문서는 **세션 경계 상태 + 연구 일지**다. 프로젝트 개요는 `README.md`.
 v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로젝트.
 
 **작업 이력의 전문은 아카이브에 있다** — `Docs/Archive/handoff/`.
-직전 스냅샷(세션 11까지, A-2+posdist 395 + BS 전사 청취 대기):
-[`Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md`](Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md).
 
 ---
 
 ## 0. 한 문단으로 — 지금 어디인가
 
-**본선 4곡은 block-gated adaptive로 수렴, pipeline 통합 대기(변경 없음).**
-s4 피아노는 onset-ODF 경로(395)를 비교 기준선으로 고정하고,
-**새 축**으로 전환한다: BS piano stem을 전처리·소니파이하며 사건을
-점진적으로만 남겨, 이산 신호에 가까운 잔여와 **395보다 깨끗한 소니파이**를
-얻는 것. 작업영역 `src/exp/s4_piano/stem_event_sculpt/` 생성 완료.
-계획·구현은 아직 진입 전.
+**본선 4곡은 block-gated adaptive detection으로 수렴, pipeline 통합 대기.**
+별도로 s4_piano 실험 진행중: Dir 피아노곡 대상 onset 탐지.
+SuperFlux가 피아노 타건을 구조적으로 놓치는 문제 확인 —
+spectral novelty + local norm(2s)이 현재 최선(613 peaks).
+등간격 비트 artifact는 저역/배경음 유래가 아닌 **곡의 리듬 격자에 대한
+SuperFlux의 균일 반응**(128ms ≈ 16분음표)으로 진단 완료.
+**v2 본선(EDM/하드코어)에서는 문제 아님** — 피아노 고유 문제.
 
 ---
 
@@ -47,23 +46,24 @@ s4 피아노는 onset-ODF 경로(395)를 비교 기준선으로 고정하고,
 ### s4_piano 상태
 
 > **기술 자문 보고서**: [`Docs/s4_piano_advisory.md`](Docs/s4_piano_advisory.md)
-> Fable 자문 전문 + 두 방향 정리 + 성운 프로젝트 대응표. 피아노 외에도 참고 가치.
+> Fable 자문 전문 + 두 방향 정리 + 성운 프로젝트 대응표. 피아노 외에도 참고 자산.
 
 **목표**: `102 - Dir.wav` (dai, 오르골/피아노, ~117s) — 피아노 건반 타건 전수 탐지.
 
-**비교 기준선 (ODF 경로, 동결)**: A-2 sliding 355 + positive-distribution rescue 40
-= **395 peaks**. BS-Roformer piano stem 주 참조, Spleeter/Demucs 감사.
-세션 11 전사 수치·소니파이는 산출 완료, **청취 판정은 보류 가능**(새 축 우선).
+**현재 최선 후보**: A-2 sliding 355 + positive-distribution rescue 40 = 395 peaks.
+A-2 원형은 유지하고 `positive_distribution × no-max flux`의 A-2 비매칭 사건만
+추가한다. 사용자 청취에서 제거 후보인 A-2-only 189개는 대부분 실제 타건,
+positive 전용 40개도 실제 타건으로 판정되어 **대체가 아닌 rescue로 채택 후보**.
 
-**새 축 — stem event sculpt** (`src/exp/s4_piano/stem_event_sculpt/`):
-피아노 스템 전처리 → 소니파이 청취 → 점진 축소로 이산 사건 잔여를 남긴다.
-귀납·저누락 우선. 기존 `_onset_*.py` / `stem_validation` / `transcription`과 분리.
+**외부 진단 참조**: BS-Roformer SW piano stem을 주 참조로 채택.
+동일 원음에서 피아노가 고품질로 분리되고 residual에는 복합 드럼·기타 사건이
+주로 남는다는 사용자 청취 판정. 정답은 아니며 Spleeter/Demucs는 감사 레이어.
 
 **s4 다음 단계**:
 
-1. **stem_event_sculpt 계획 진입** (전처리 패스 정의, 소니파이 형식, 395 대비 청취 프로토콜).
-2. (병행 가능) 세션 11 전사/BS-only·395-only 청취 — 395 지위 보강용.
-3. MuseScore 팬 악보 활용은 새 축 청취 결과가 나온 뒤 재검토.
+1. BS 주 참조 vs 395의 공통 190 / BS-only 65 / 395-only 203 청취.
+2. BS piano stem 독립 전사/MIDI와 기존 악보의 구조 일치성 검토.
+3. MuseScore 팬 악보 활용 검토 (참조 정답용, D-21 비저촉).
 
 **B-2 CQT 판정: 기각.** 800 peaks 중 짧은 burst가 크게 증가했고 사용자 청취에서
 CQT 전용 클릭이 주로 burst·링잉·오탐으로 판정됨. 세션 5 참조.
@@ -144,14 +144,6 @@ out/stems/Dir/
 ---
 
 ## 2. 세션 이력
-
-### 세션 12 (2026-08-10) — stem event sculpt 작업영역 준비
-
-- 직전 HANDOFF를
-  `Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md`
-  로 아카이브.
-- 새 작업영역 `src/exp/s4_piano/stem_event_sculpt/` 생성 (README + .gitignore).
-- ODF 395 경로는 비교 기준선으로 동결. 전처리·소니파이 계획/구현은 미착수.
 
 ### 세션 1 (2026-08-07~08) — 파이프라인 구축 + Q1 발견
 
@@ -575,7 +567,6 @@ src/exp/s4_piano/   13개 — 세션 4-9 (Dir 피아노 onset)
   _diag_periodicity.py  — 등간격 비트 주기성 진단 (리듬 격자 확인)
   stem_validation/      — 3-model piano stem 분리·합의·소니파이·검증
     transcription/      — Transkun/Basic Pitch 독립 전사·평가·소니파이·검증
-  stem_event_sculpt/    — BS stem 전처리·점진 축소 소니파이 (계획 전)
 ```
 
 ---
