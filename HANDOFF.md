@@ -1,4 +1,4 @@
-# HANDOFF — 2026-08-10 · s4 stem event sculpt 착수 준비
+# HANDOFF — 2026-08-10 · sculpt 청취 판정: HPSS percussive 주 후보
 
 이 문서는 **세션 경계 상태 + 연구 일지**다. 프로젝트 개요는 `README.md`.
 v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로젝트.
@@ -12,11 +12,11 @@ v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로�
 ## 0. 한 문단으로 — 지금 어디인가
 
 **본선 4곡은 block-gated adaptive로 수렴, pipeline 통합 대기(변경 없음).**
-s4 피아노는 onset-ODF 경로(395)를 비교 기준선으로 고정하고,
-**새 축**으로 전환한다: BS piano stem을 전처리·소니파이하며 사건을
-점진적으로만 남겨, 이산 신호에 가까운 잔여와 **395보다 깨끗한 소니파이**를
-얻는 것. 작업영역 `src/exp/s4_piano/stem_event_sculpt/` 생성 완료.
-계획·구현은 아직 진입 전.
+s4 sculpt 3패스 청취 판정: **`hpss_percussive` = 주 후보**(타건 순간 포괄).
+`lpc_residual`은 이산성은 좋으나 볼륨 편차·누락 의심 → 값 조정 테스트 시
+**보조 후보**. `lpc_synthesis`는 사건/링잉 대비가 raw보다 돋보여 유효.
+harmonic·sine_tonal은 전자피아노/배음 포락선 인상. sine_residual은 울림·링잉
+커 관심에서 다소 멀지만 중저역 강조 활용은 미결.
 
 ---
 
@@ -51,19 +51,25 @@ s4 피아노는 onset-ODF 경로(395)를 비교 기준선으로 고정하고,
 
 **목표**: `102 - Dir.wav` (dai, 오르골/피아노, ~117s) — 피아노 건반 타건 전수 탐지.
 
-**비교 기준선 (ODF 경로, 동결)**: A-2 sliding 355 + positive-distribution rescue 40
-= **395 peaks**. BS-Roformer piano stem 주 참조, Spleeter/Demucs 감사.
-세션 11 전사 수치·소니파이는 산출 완료, **청취 판정은 보류 가능**(새 축 우선).
+**비교 기준선 (ODF 경로, 동결)**: A-2 + positive rescue **395**. 작업 산출에
+395 대비 소니파이는 넣지 않음(사용자 청취 비교).
 
-**새 축 — stem event sculpt** (`src/exp/s4_piano/stem_event_sculpt/`):
-피아노 스템 전처리 → 소니파이 청취 → 점진 축소로 이산 사건 잔여를 남긴다.
-귀납·저누락 우선. 기존 `_onset_*.py` / `stem_validation` / `transcription`과 분리.
+**stem event sculpt** (`out/stems/Dir/event_sculpt/`):
+
+| 산출 | 청취 판정 |
+|------|-----------|
+| **hpss_percussive** | **주 후보** — 건반 타건 순간을 담았다고 봄 |
+| **lpc_residual** | **보조 후보(조건부)** — 이산 사건 감지 성공, 볼륨 편차·누락 의심 → 값 조정 테스트 포함 시 |
+| **lpc_synthesis** | **유효** — sine_tonal보다 사건만 남기려는 인상; 링잉 있으나 사건↔링잉 볼륨 대비가 raw보다 돋봄 |
+| hpss_harmonic | 전자피아노 인상; sine_residual보다 raw에 가까워 **가벼운 전처리 단계**로 고려 가능 |
+| sine_residual | 피아노 울림·**링잉 큼** → 이번 관심에서 다소 멀음; 중저역 강조 활용은 미결 |
+| sine_tonal | 전자피아노·포락선처럼 이어짐 → 사건보다 **배음**으로 들림 (타 용도 여지, 본 프로젝트는 의문) |
 
 **s4 다음 단계**:
 
-1. **stem_event_sculpt 계획 진입** (전처리 패스 정의, 소니파이 형식, 395 대비 청취 프로토콜).
-2. (병행 가능) 세션 11 전사/BS-only·395-only 청취 — 395 지위 보강용.
-3. MuseScore 팬 악보 활용은 새 축 청취 결과가 나온 뒤 재검토.
+1. **주 후보 `hpss_percussive` 기준** 다음 점진 패스/계수·표현 설계.
+2. (선택) `lpc_residual` 고정값 조정 스윕은 D-21 절차를 새로 선언한 뒤에만.
+3. `lpc_synthesis` 유효성 활용 여부(대비 강화 단 vs 단독) 결정.
 
 **B-2 CQT 판정: 기각.** 800 peaks 중 짧은 burst가 크게 증가했고 사용자 청취에서
 CQT 전용 클릭이 주로 burst·링잉·오탐으로 판정됨. 세션 5 참조.
@@ -137,6 +143,14 @@ out/stems/Dir/
   {bs_roformer,spleeter,demucs}/             전체 stems+piano+residual
   stem_manifest.json                         모델/버전/checkpoint SHA-256
   stem_validation_metrics.json               재구성·상관·형식 검증
+  event_sculpt/                              ★ sculpt 3패스 청취 WAV
+    hpss_percussive.wav   ★ 주 후보 (타건 순간)
+    hpss_harmonic.wav        전자피아노; 가벼운 전처리 후보
+    lpc_residual.wav         보조 후보(값 조정 테스트 시)
+    lpc_synthesis.wav        유효 (사건/링잉 대비)
+    sine_residual.wav        울림·링잉 큼; 중저역 미결
+    sine_tonal.wav           배음 포락선; 본 프로젝트 의문
+    sculpt_manifest.json / sculpt_determinism.json
   전체_log1p_raw_클릭.wav       696  log1p (raw)
   ... 외 다수 (블록크기×deburst 조합, intersection, 비교)
 ```
@@ -144,6 +158,39 @@ out/stems/Dir/
 ---
 
 ## 2. 세션 이력
+
+### 세션 13 (2026-08-10) — stem event sculpt 3패스 병행 산출 + 청취 판정
+
+**실행**: `run_passes.py` + `--determinism-check`. 입력 BS piano 전장 116.813s.
+WAV SHA 재실행 일치.
+
+**고정 파라미터**:
+- HPSS: kernel=31, power=2, margin=1, n_fft=2048, hop=256
+- LPC: order=24, frame=2048, hop=512, pre-emphasis=0.97
+- Sinusoidal: freq local-max ∧ mag≥frame p90, n_fft=2048, hop=256
+
+**관측(수치)**:
+- source peak=1.078 rms=0.184
+- hpss_percussive peak=0.536 rms=0.037; harmonic peak=0.960 rms=0.162
+- lpc_residual peak=0.534 rms=0.009; synthesis peak=0.634 rms=0.023
+- sine_residual peak=0.638 rms=0.087; tonal peak=0.638 rms=0.105
+
+**사용자 청취 판정**:
+- `hpss_percussive`: **주 후보** — 생각했던 피아노 건반 치는 순간을 담음.
+- `lpc_residual`: 더 이산적으로 피아노 사건 감지에 성공. 다만 볼륨 편차 크고
+  누락 의심 → **값 조정 테스트를 포함할 때 보조 후보**.
+- `hpss_harmonic`: 전자피아노로 친 듯한 소리. `sine_residual`보다 raw에 가까워
+  **가벼운 전처리 단계**로 고려할 만함.
+- `lpc_synthesis`: `sine_tonal`보다 사건만 남기려 한 인상. 링잉 포함이나
+  사건↔링잉 볼륨 대비가 raw보다 돋보여 **유효**.
+- `sine_residual`: 피아노 울림 포함 → 이번 관심사에서 다소 멀 수 있음.
+  중저역 강조 활용 여지는 미결. **링잉이 큼**.
+- `sine_tonal`: 전자피아노 인상. 사건성보다 포락선처럼 이어져 청자에게
+  **배음**으로 읽힘 (배음 쪽 활용 여지 있으나 본 프로젝트는 의문).
+
+**해석**: 1차 병행 산출의 주선은 HPSS percussive. LPC residual은 이산성
+이득이 있으나 고정값 그대로는 보조에 그침. sinusoidal 잔여/톤은 사건 축보다
+울림·배음 축에 가깝다. 이번 청취로 파라미터를 바꾸지 않음(D-21).
 
 ### 세션 12 (2026-08-10) — stem event sculpt 작업영역 준비
 
@@ -476,6 +523,7 @@ A-2 sliding percentile을 적용해 고정 블록 경계를 제거한다.
 |------|------|------|------|
 | **novelty + norm (2s)** | 코사인 거리 → bandpass+99pct norm → Otsu | baseline과 완전히 다른 피아노 사건 탐지 | 모든 타건 포착엔 미흡 |
 | **A-3 fusion (2s)** | `sqrt(novelty_norm × no-max flux_norm)` → Otsu | burst/격자 반응 억제, 사용자 최선 판정 | 0-4s 미탐, 과소탐지 위험 |
+| **HPSS percussive (sculpt)** | BS piano → anisotropic median P | 타건 순간 포괄, sculpt **주 후보** | 이후 점진 축소·계수 미착수 |
 
 ### 보조 유효
 
@@ -487,6 +535,9 @@ A-2 sliding percentile을 적용해 고정 블록 경계를 제거한다.
 | **A2∩complex core** | ±30ms 일대일 공통 사건 | 타건 누락 큰 정밀도 보조 |
 | **positive-distribution rescue** | A-2와 비매칭인 positive×flux 사건 추가 | A-2 보존 + 실제 타건 40개 복구 |
 | **BS-Roformer piano stem** | 동일 원음 6-stem 분리 | 주 귀속 참조; Spleeter/Demucs로 감사 |
+| **LPC residual (sculpt)** | order=24 화이트닝 여기 | 이산 사건 감지; 볼륨 편차·누락 → 값 조정 시 보조 |
+| **LPC synthesis (sculpt)** | LPC 재합성 | 사건↔링잉 대비 raw보다 돋봄, 유효 |
+| **HPSS harmonic (sculpt)** | H 성분 | 전자피아노 인상; raw에 가까운 가벼운 전처리 후보 |
 
 ### 불충분 (s4 피아노)
 
@@ -496,6 +547,8 @@ A-2 sliding percentile을 적용해 고정 블록 경계를 제거한다.
 | A-1+A-3 결합 | 일부 개선과 burst가 혼재해 단독 채택 불충분 |
 | A2-only residual | 실제 사건/artifact 여부와 감쇠 안전성 불명 |
 | complex-only rescue | 유효 사건과 비피아노 burst 혼재, 선별 필요 |
+| sine_residual (sculpt) | 울림·링잉 큼, 관심에서 다소 멀음; 중저역 활용 미결 |
+| sine_tonal (sculpt) | 배음 포락선으로 들림; 본 프로젝트 사건 축은 의문 |
 
 ### 기각
 
@@ -575,7 +628,7 @@ src/exp/s4_piano/   13개 — 세션 4-9 (Dir 피아노 onset)
   _diag_periodicity.py  — 등간격 비트 주기성 진단 (리듬 격자 확인)
   stem_validation/      — 3-model piano stem 분리·합의·소니파이·검증
     transcription/      — Transkun/Basic Pitch 독립 전사·평가·소니파이·검증
-  stem_event_sculpt/    — BS stem 전처리·점진 축소 소니파이 (계획 전)
+  stem_event_sculpt/    — HPSS percussive 주 후보; LPC 보조/유효 (청취 판정)
 ```
 
 ---

@@ -1,30 +1,80 @@
 # s4 piano stem event sculpt
 
-BS-Roformer piano stem을 **전처리 → 소니파이 청취 → 점진 축소**로
-이산 사건 잔여에 가깝게 남기는 실험 작업공간이다.
+BS-Roformer piano stem을 **전처리 → 전장 WAV 청취**로 이산 사건 잔여
+후보를 만드는 실험 작업공간이다.
 
-기존 `s4_piano` onset 검출기 경로(A-2 + positive rescue 395 등)와
-`stem_validation`/`transcription`과는 분리한다. 395는 비교 기준선으로만 둔다.
+기존 `_onset_*.py` / `stem_validation` / `transcription`과 분리한다.
+395 대비 A/B 소니파이·L/R stem 진단 포맷은 만들지 않는다.
+산출 WAV 자체가 청취물이다.
 
 ## 목표
 
-- 귀납에 가깝게: 검출기 파라미터 고르기보다, 스템을 듣고 남길 사건만 좁혀 간다.
-- 누락을 우선 적게: 한 번에 최종을 만들지 않고 여러 패스로 점진 축소한다.
-- 산출은 기존 395보다 **청취가 깨끗한 소니파이**(이산 신호에 가까운 잔여).
+- 귀납·저누락: 검출기 파라미터 고르기보다 성분 분리 잔여를 듣는다.
+- 1차: HPSS / LPC whitening / sinusoidal residual 세 가정을 **병행 산출**.
+- 출력은 전장(~117s) stereo FLOAT.
 
-## 입력 (고정 후보)
+## 입력 (고정)
 
-- 주 입력: `out/stems/Dir/bs_roformer/piano.wav`
-- 비교 기준선: A-2 + positive-distribution rescue 395
-  (`out/sonify/Dir/전체_a2_posdist_rescue_클릭.wav` 등)
+- `out/stems/Dir/bs_roformer/piano.wav`만 사용
+- ODF / 전사 / 395로 마스크하지 않음
 
-정답·튜닝 목표로 stem/전사를 쓰지 않는다 (D-21).
+## 고정 파라미터 (D-21)
+
+| 패스 | 사건 후보 | 보완 | 값 |
+|------|-----------|------|-----|
+| HPSS | `hpss_percussive.wav` | `hpss_harmonic.wav` | kernel=31, power=2, margin=1, n_fft=2048, hop=256 |
+| LPC | `lpc_residual.wav` | `lpc_synthesis.wav` | order=24, frame=2048, hop=512, pre-emphasis=0.97 |
+| Sinusoidal | `sine_residual.wav` | `sine_tonal.wav` | local-max ∧ mag≥frame p90, n_fft=2048, hop=256 |
+
+청취 파일만 `peak>0.98`이면 파일 단위 soft limit. 패스 내부 이득 조절 없음.
+
+## 출력
+
+```
+out/stems/Dir/event_sculpt/
+  hpss_percussive.wav
+  hpss_harmonic.wav
+  lpc_residual.wav
+  lpc_synthesis.wav
+  sine_residual.wav
+  sine_tonal.wav
+  sculpt_manifest.json
+  sculpt_determinism.json   # --determinism-check 시
+```
+
+## 실행
+
+프로젝트 루트 PowerShell, 공유 venv:
+
+```powershell
+$py = "E:\game\Music Hermeneutic AI\.venv\Scripts\python.exe"
+& $py "src\exp\s4_piano\stem_event_sculpt\run_passes.py"
+& $py "src\exp\s4_piano\stem_event_sculpt\run_passes.py" --determinism-check
+```
+
+출력을 듣고 파라미터를 바꾸지 않는다.
+
+## 청취 순서 (권장)
+
+1. `hpss_percussive` → `hpss_harmonic`
+2. `lpc_residual` → `lpc_synthesis`
+3. `sine_residual` → `sine_tonal`
+
+각 쌍에서 “사건이 남는지 / 무엇이 빠졌는지”만 기록. 395와 비교는 작업 산출이 아님.
+
+## 청취 판정 (세션 13)
+
+| 산출 | 판정 |
+|------|------|
+| **hpss_percussive** | **주 후보** — 건반 타건 순간 포괄 |
+| **lpc_residual** | **보조(조건부)** — 이산 성공, 볼륨 편차·누락 → 값 조정 테스트 시 |
+| **lpc_synthesis** | **유효** — 사건↔링잉 대비가 raw보다 돋봄 |
+| hpss_harmonic | 전자피아노; sine_residual보다 raw 가까움 → 가벼운 전처리 후보 |
+| sine_residual | 울림·링잉 큼; 관심에서 다소 멀음; 중저역 미결 |
+| sine_tonal | 배음 포락선; 본 프로젝트 사건 축은 의문 |
+
+출력을 듣고 1차 고정 파라미터를 바꾸지 않는다. LPC 값 조정은 별도 D-21 선언 후.
 
 ## Workspace
 
-`runtime/`, `work/`는 이 디렉터리 아래에 격리하고 git에서 제외한다.
-기존 공유 venv와 `stem_validation` runtime은 수정하지 않는다.
-
-## 상태
-
-작업영역만 준비됨. 전처리·소니파이 계획 및 구현은 후속 세션.
+`runtime/`, `work/`는 이 디렉터리 아래 격리·gitignore.
