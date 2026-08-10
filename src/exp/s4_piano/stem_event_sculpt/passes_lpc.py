@@ -20,16 +20,18 @@ def _pre_emphasize(x: np.ndarray, coef: float) -> np.ndarray:
     return out
 
 
-def _lpc_channel(mono: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+def _lpc_channel(
+    mono: np.ndarray,
+    *,
+    order: int,
+    frame: int,
+    hop: int,
+    pre_emphasis: float,
+) -> tuple[np.ndarray, np.ndarray]:
     """Overlap-add LPC residual and all-pole synthesis for one channel."""
-    order = LPC_PARAMS["order"]
-    frame = LPC_PARAMS["frame"]
-    hop = LPC_PARAMS["hop"]
-    pre = LPC_PARAMS["pre_emphasis"]
-
     x = np.asarray(mono, dtype=np.float64)
     n = len(x)
-    emphasized = _pre_emphasize(x, pre)
+    emphasized = _pre_emphasize(x, pre_emphasis)
     window = np.hanning(frame).astype(np.float64)
 
     residual = np.zeros(n, dtype=np.float64)
@@ -53,7 +55,6 @@ def _lpc_channel(mono: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
             seg_w = seg * window
             valid = frame
 
-        # Guard silent / degenerate frames
         if float(np.max(np.abs(seg_w))) < 1e-12:
             a = np.zeros(order + 1, dtype=np.float64)
             a[0] = 1.0
@@ -65,9 +66,7 @@ def _lpc_channel(mono: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
                 a[0] = 1.0
 
         a = np.asarray(a, dtype=np.float64)
-        # Whitening: A(z) applied to windowed frame
         exc = lfilter(a, [1.0], seg_w)
-        # All-pole reconstruction from excitation
         synth = lfilter([1.0], a, exc)
 
         residual[start : start + valid] += exc[:valid]
@@ -77,18 +76,36 @@ def _lpc_channel(mono: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     nonzero = norm > 1e-12
     residual[nonzero] /= norm[nonzero]
     synthesis[nonzero] /= norm[nonzero]
-    # Undo pre-emphasis on synthesis path for listening complementarity
-    # Keep residual as whitened excitation (pre-emphasized domain).
     return residual.astype(np.float32), synthesis.astype(np.float32)
 
 
-def lpc_components(stereo: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+def lpc_components(
+    stereo: np.ndarray,
+    *,
+    order: int | None = None,
+    frame: int | None = None,
+    hop: int | None = None,
+    pre_emphasis: float | None = None,
+) -> tuple[np.ndarray, np.ndarray]:
     """Return (residual, synthesis), same shape as stereo float32."""
+    order_v = LPC_PARAMS["order"] if order is None else int(order)
+    frame_v = LPC_PARAMS["frame"] if frame is None else int(frame)
+    hop_v = LPC_PARAMS["hop"] if hop is None else int(hop)
+    pre_v = (
+        LPC_PARAMS["pre_emphasis"] if pre_emphasis is None else float(pre_emphasis)
+    )
+
     y = np.asarray(stereo, dtype=np.float32)
     residuals = []
     synths = []
     for ch in range(y.shape[1]):
-        res, syn = _lpc_channel(y[:, ch])
+        res, syn = _lpc_channel(
+            y[:, ch],
+            order=order_v,
+            frame=frame_v,
+            hop=hop_v,
+            pre_emphasis=pre_v,
+        )
         residuals.append(res)
         synths.append(syn)
     residual = np.column_stack(residuals).astype(np.float32)

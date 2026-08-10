@@ -20,6 +20,26 @@ OUTPUT_DIR = ROOT / "out" / "stems" / "Dir" / "event_sculpt"
 LISTEN_PEAK_LIMIT = 0.98
 
 
+def click_wav_name(stem: str, n_peaks: int) -> str:
+    """Click sonify filename with peak count (convention from 2026-08-10).
+
+    Examples:
+      click_wav_name("lpc_o24_residual_sf_adaptive", 406)
+        -> "lpc_o24_residual_sf_adaptive_클릭_p406.wav"
+      click_wav_name("foo_클릭", 10)  # strips trailing _클릭 if present
+        -> "foo_클릭_p10.wav"
+    """
+    base = stem
+    if base.lower().endswith(".wav"):
+        base = base[:-4]
+    if base.endswith("_클릭"):
+        base = base[: -len("_클릭")]
+    n = int(n_peaks)
+    if n < 0:
+        raise ValueError(f"n_peaks must be >= 0, got {n}")
+    return f"{base}_클릭_p{n}.wav"
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -71,6 +91,11 @@ def soft_limit_for_listen(audio: np.ndarray) -> np.ndarray:
     return out
 
 
+def clip_for_listen(audio: np.ndarray) -> np.ndarray:
+    """Hard clip to [-1, 1] without global scale-down (preserves LUFS)."""
+    return np.clip(np.asarray(audio, dtype=np.float32), -1.0, 1.0)
+
+
 def audio_stats(audio: np.ndarray) -> dict[str, float]:
     arr = np.asarray(audio, dtype=np.float64)
     return {
@@ -80,9 +105,18 @@ def audio_stats(audio: np.ndarray) -> dict[str, float]:
 
 
 def write_listening_wav(
-    path: Path, audio: np.ndarray, sample_rate: int = SR
+    path: Path,
+    audio: np.ndarray,
+    sample_rate: int = SR,
+    *,
+    limit_mode: str = "soft_scale",
 ) -> dict[str, Any]:
-    limited = soft_limit_for_listen(audio)
+    if limit_mode == "soft_scale":
+        limited = soft_limit_for_listen(audio)
+    elif limit_mode == "clip":
+        limited = clip_for_listen(audio)
+    else:
+        raise ValueError(f"unknown limit_mode={limit_mode}")
     write_float_wav(path, limited, sample_rate)
     stats = audio_stats(limited)
     return {
@@ -91,6 +125,7 @@ def write_listening_wav(
         "frames": int(limited.shape[0]),
         "channels": int(limited.shape[1]) if limited.ndim == 2 else 1,
         "duration_s": float(limited.shape[0] / sample_rate),
+        "limit_mode": limit_mode,
         **stats,
     }
 
