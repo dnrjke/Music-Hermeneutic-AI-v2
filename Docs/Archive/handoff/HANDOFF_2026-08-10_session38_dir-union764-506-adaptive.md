@@ -4,9 +4,7 @@
 v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로젝트.
 
 **작업 이력의 전문은 아카이브에 있다** — `Docs/Archive/handoff/`.
-직전 스냅샷(세션 38까지 · Dir 통합본 764):
-[`Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md`](Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md).
-그 이전(세션 11까지):
+직전 스냅샷(세션 11까지):
 [`Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md`](Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md).
 
 ---
@@ -223,12 +221,6 @@ out/stems/Dir/
 ---
 
 ## 2. 세션 이력
-
-### 세션 39 (2026-08-10) — HANDOFF 아카이브
-
-세션 38 시점 HANDOFF를
-`Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md`
-로 스냅샷. 라이브 `HANDOFF.md`의 직전 스냅샷 포인터를 갱신.
 
 ### 세션 38 (2026-08-10) — Dir 통합본 764 채택 (역할 분담)
 

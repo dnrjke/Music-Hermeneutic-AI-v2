@@ -3,6 +3,9 @@
 BS-Roformer piano stem을 **전처리 → 전장 WAV 청취**로 이산 사건 잔여
 후보를 만드는 실험 작업공간이다.
 
+**Dir 통합본(764) · 전체_adaptive · 506 소개**:
+[`Docs/dir_764_pipeline.md`](../../../../Docs/dir_764_pipeline.md)
+
 기존 `_onset_*.py` / `stem_validation` / `transcription`과 분리한다.
 395 대비 A/B 소니파이·L/R stem 진단 포맷·클릭 오버레이는 만들지 않는다.
 산출 WAV 자체가 청취물이다.
