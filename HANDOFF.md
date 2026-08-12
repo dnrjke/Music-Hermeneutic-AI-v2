@@ -4,7 +4,7 @@
 v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로젝트.
 
 **작업 이력의 전문은 아카이브에 있다** — `Docs/Archive/handoff/`.
-직전 스냅샷(2026-08-12 · s5 midi_fuse Dir 선율 go · harmonic=감상·짧은노트 보완):
+직전 스냅샷(2026-08-12 · s5 midi_fuse Dir 선율 go · “듣기 좋다”=원곡을 해치지 않고 더 재현):
 [`Docs/Archive/handoff/HANDOFF_2026-08-12_s5-midi_fuse-go.md`](Docs/Archive/handoff/HANDOFF_2026-08-12_s5-midi_fuse-go.md).
 그 이전(세션 39까지 · Dir 764 채택 직후):
 [`Docs/Archive/handoff/HANDOFF_2026-08-11_session39_pre-batch764.md`](Docs/Archive/handoff/HANDOFF_2026-08-11_session39_pre-batch764.md).
@@ -20,7 +20,8 @@ v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로�
 **harmonic·부가 기법 채택 (중요)**:
 - Transkun mid는 **노트 길이가 짧은** 편 → 다른 층/기법을 얹는 목적에 **길이·밀도 보완(이것도 rescue)** 이 있음.
 - harmonic: 이전에 밝힌 **rescue** + **노트 길이 등 보완**. “실제 사건이 늘었는지”는 **별도 검토 필요**.
-- **당장의 선택 근거**는 여전히 **감상용으로 좋았는가**.
+- **당장의 선택 근거**는 **감상용으로 좋았는가**. 여기서 “듣기 좋다”는
+  **원곡을 해치지 않고 더 재현한다**고 해석하고 그렇게 갔다.
 - Basic Pitch: 왼손/배음 등을 잡아 **풍성해진** 점이 눈에 띔 (506 rescue 메움 여부와는 별 축의 인상).
 - 링잉·사건 과학으로 깊이 가려면 **harmonic 없이** piano Transkun 쪽이 맞음. **당장은 곡→MIDI 전사·감상 초점.**
 
@@ -301,7 +302,8 @@ Dir missed-2·527·miss-3 상태 변경 없음.
 
 ### 2026-08-12 — HANDOFF 아카이브 (s5 midi_fuse go)
 
-라이브 HANDOFF(s5 midi_fuse Dir 선율 go · harmonic=감상·짧은노트 보완 · 764/피치 후속 비급)를
+라이브 HANDOFF(s5 midi_fuse Dir 선율 go · harmonic=짧은노트 보완·감상 ·
+“듣기 좋다”=원곡을 해치지 않고 더 재현 · 764/피치 후속 비급)를
 `Docs/Archive/handoff/HANDOFF_2026-08-12_s5-midi_fuse-go.md`로 스냅샷.
 라이브 `HANDOFF.md`의 직전 스냅샷 포인터를 이 파일로 갱신.
 
