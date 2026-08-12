@@ -1,0 +1,3425 @@
+[
+  {
+    "onset_s": 30.00937499999999,
+    "offset_s": 30.057291666666657,
+    "pitch": 81,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.011458333333323,
+    "offset_s": 30.054166666666656,
+    "pitch": 50,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.011458333333323,
+    "offset_s": 30.058854166666656,
+    "pitch": 85,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.134374999999988,
+    "offset_s": 30.173437499999988,
+    "pitch": 68,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.143229166666654,
+    "offset_s": 30.19895833333332,
+    "pitch": 83,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.14583333333332,
+    "offset_s": 30.193229166666654,
+    "pitch": 40,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.262499999999985,
+    "offset_s": 30.311458333333317,
+    "pitch": 68,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.263020833333318,
+    "offset_s": 30.33541666666665,
+    "pitch": 85,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.391145833333315,
+    "offset_s": 30.522395833333313,
+    "pitch": 52,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.518749999999983,
+    "offset_s": 30.638020833333314,
+    "pitch": 56,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.52031249999998,
+    "offset_s": 30.72968749999998,
+    "pitch": 76,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.52187499999998,
+    "offset_s": 30.66041666666665,
+    "pitch": 83,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.641145833333315,
+    "offset_s": 30.708333333333314,
+    "pitch": 59,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.771874999999987,
+    "offset_s": 30.80208333333332,
+    "pitch": 83,
+    "velocity": 72,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 30.89895833333331,
+    "offset_s": 30.93749999999998,
+    "pitch": 85,
+    "velocity": 71,
+    "source": "piano"
+  },
+  {
+    "onset_s": 30.90052083333331,
+    "offset_s": 30.936979166666646,
+    "pitch": 52,
+    "velocity": 60,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.026041666666654,
+    "offset_s": 31.056249999999988,
+    "pitch": 64,
+    "velocity": 94,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 31.02656249999998,
+    "offset_s": 31.05677083333331,
+    "pitch": 59,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.132812499999975,
+    "offset_s": 31.195312499999975,
+    "pitch": 81,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.156770833333322,
+    "offset_s": 31.19218749999999,
+    "pitch": 90,
+    "velocity": 81,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 31.164583333333308,
+    "offset_s": 31.218749999999975,
+    "pitch": 68,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.164583333333308,
+    "offset_s": 31.219270833333308,
+    "pitch": 85,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.165624999999974,
+    "offset_s": 31.21770833333331,
+    "pitch": 42,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.168229166666656,
+    "offset_s": 31.199479166666656,
+    "pitch": 54,
+    "velocity": 77,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 31.176041666666656,
+    "offset_s": 31.214583333333323,
+    "pitch": 78,
+    "velocity": 58,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 31.40729166666664,
+    "offset_s": 32.170312499999966,
+    "pitch": 49,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.41041666666664,
+    "offset_s": 31.446874999999974,
+    "pitch": 61,
+    "velocity": 66,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.535937499999974,
+    "offset_s": 31.798958333333307,
+    "pitch": 56,
+    "velocity": 73,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.537499999999973,
+    "offset_s": 31.775520833333307,
+    "pitch": 66,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.790624999999974,
+    "offset_s": 31.915624999999974,
+    "pitch": 59,
+    "velocity": 76,
+    "source": "piano"
+  },
+  {
+    "onset_s": 31.91666666666664,
+    "offset_s": 31.96041666666664,
+    "pitch": 65,
+    "velocity": 66,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.038020833333306,
+    "offset_s": 32.14843749999997,
+    "pitch": 56,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.17135416666663,
+    "offset_s": 32.658333333333296,
+    "pitch": 37,
+    "velocity": 56,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.29479166666663,
+    "offset_s": 32.61041666666663,
+    "pitch": 66,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.5567708333333,
+    "offset_s": 32.59166666666663,
+    "pitch": 49,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.55937499999997,
+    "offset_s": 32.59166666666663,
+    "pitch": 61,
+    "velocity": 60,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.679687499999964,
+    "offset_s": 32.730729166666634,
+    "pitch": 68,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.81406249999997,
+    "offset_s": 32.91354166666664,
+    "pitch": 37,
+    "velocity": 66,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.93906249999997,
+    "offset_s": 33.099999999999966,
+    "pitch": 73,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.94062499999997,
+    "offset_s": 32.9802083333333,
+    "pitch": 61,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 32.941666666666634,
+    "offset_s": 33.0067708333333,
+    "pitch": 68,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.070312499999964,
+    "offset_s": 33.12187499999997,
+    "pitch": 37,
+    "velocity": 74,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.070312499999964,
+    "offset_s": 33.12291666666663,
+    "pitch": 77,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.1989583333333,
+    "offset_s": 33.28489583333329,
+    "pitch": 42,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.20885416666663,
+    "offset_s": 33.23906249999996,
+    "pitch": 57,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.21197916666663,
+    "offset_s": 33.33177083333329,
+    "pitch": 69,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.213020833333296,
+    "offset_s": 33.25833333333329,
+    "pitch": 30,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.213020833333296,
+    "offset_s": 33.354687499999955,
+    "pitch": 81,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.21510416666663,
+    "offset_s": 33.33229166666662,
+    "pitch": 76,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.31510416666662,
+    "offset_s": 33.49427083333329,
+    "pitch": 80,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.57031249999996,
+    "offset_s": 33.61197916666662,
+    "pitch": 57,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.57083333333331,
+    "offset_s": 33.60520833333331,
+    "pitch": 49,
+    "velocity": 90,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 33.57135416666662,
+    "offset_s": 33.63281249999995,
+    "pitch": 42,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.57916666666662,
+    "offset_s": 33.70260416666662,
+    "pitch": 68,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.58177083333329,
+    "offset_s": 33.614583333333286,
+    "pitch": 30,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.58229166666662,
+    "offset_s": 33.68020833333328,
+    "pitch": 81,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.82499999999995,
+    "offset_s": 33.864583333333286,
+    "pitch": 66,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.82499999999995,
+    "offset_s": 33.88749999999995,
+    "pitch": 80,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.95468749999995,
+    "offset_s": 34.00520833333328,
+    "pitch": 81,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 33.96093749999998,
+    "offset_s": 34.00260416666665,
+    "pitch": 78,
+    "velocity": 74,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 34.08229166666661,
+    "offset_s": 34.12291666666661,
+    "pitch": 73,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.08229166666661,
+    "offset_s": 34.25937499999995,
+    "pitch": 83,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.217708333333285,
+    "offset_s": 34.32968749999995,
+    "pitch": 49,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.21927083333328,
+    "offset_s": 34.28489583333328,
+    "pitch": 37,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.22031249999995,
+    "offset_s": 34.32968749999995,
+    "pitch": 76,
+    "velocity": 102,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.22083333333328,
+    "offset_s": 34.32968749999995,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.22968749999995,
+    "offset_s": 34.35312499999995,
+    "pitch": 80,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.33593749999995,
+    "offset_s": 34.371874999999946,
+    "pitch": 56,
+    "velocity": 71,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.46302083333328,
+    "offset_s": 34.49374999999995,
+    "pitch": 61,
+    "velocity": 68,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.46458333333328,
+    "offset_s": 34.494791666666615,
+    "pitch": 81,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.588541666666615,
+    "offset_s": 34.62864583333328,
+    "pitch": 64,
+    "velocity": 105,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.59010416666661,
+    "offset_s": 34.65416666666661,
+    "pitch": 80,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.59166666666665,
+    "offset_s": 34.629687499999974,
+    "pitch": 56,
+    "velocity": 100,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 34.59270833333328,
+    "offset_s": 34.62916666666661,
+    "pitch": 49,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.59322916666661,
+    "offset_s": 34.631249999999945,
+    "pitch": 37,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.70677083333328,
+    "offset_s": 34.770312499999946,
+    "pitch": 80,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.70885416666661,
+    "offset_s": 34.748437499999945,
+    "pitch": 68,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 34.84218749999997,
+    "offset_s": 34.88802083333331,
+    "pitch": 88,
+    "velocity": 94,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 34.97291666666664,
+    "offset_s": 35.0270833333333,
+    "pitch": 66,
+    "velocity": 95,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 34.974999999999945,
+    "offset_s": 35.02812499999994,
+    "pitch": 80,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.09739583333327,
+    "offset_s": 35.376041666666595,
+    "pitch": 78,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.1010416666666,
+    "offset_s": 35.37343749999993,
+    "pitch": 74,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.10208333333327,
+    "offset_s": 35.37343749999993,
+    "pitch": 69,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.23333333333327,
+    "offset_s": 35.32812499999993,
+    "pitch": 38,
+    "velocity": 71,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.2354166666666,
+    "offset_s": 35.28177083333326,
+    "pitch": 26,
+    "velocity": 71,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.235937499999935,
+    "offset_s": 35.280729166666596,
+    "pitch": 45,
+    "velocity": 72,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.239583333333265,
+    "offset_s": 35.28020833333326,
+    "pitch": 54,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.351041666666596,
+    "offset_s": 35.42083333333326,
+    "pitch": 80,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.610937499999935,
+    "offset_s": 35.69999999999993,
+    "pitch": 56,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.6119791666666,
+    "offset_s": 35.7463541666666,
+    "pitch": 68,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.61249999999993,
+    "offset_s": 35.93177083333327,
+    "pitch": 47,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.613020833333266,
+    "offset_s": 35.745833333333266,
+    "pitch": 81,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.614583333333265,
+    "offset_s": 35.8854166666666,
+    "pitch": 40,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.62343749999993,
+    "offset_s": 35.675520833333266,
+    "pitch": 28,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.8619791666666,
+    "offset_s": 35.9088541666666,
+    "pitch": 80,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.9838541666666,
+    "offset_s": 36.02656249999993,
+    "pitch": 68,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 35.98489583333327,
+    "offset_s": 36.04583333333326,
+    "pitch": 81,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.11562499999993,
+    "offset_s": 36.28124999999993,
+    "pitch": 83,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.116666666666596,
+    "offset_s": 36.16458333333326,
+    "pitch": 73,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.24062499999993,
+    "offset_s": 36.27968749999993,
+    "pitch": 49,
+    "velocity": 75,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.251041666666595,
+    "offset_s": 36.30520833333326,
+    "pitch": 76,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.25624999999993,
+    "offset_s": 36.30052083333326,
+    "pitch": 37,
+    "velocity": 66,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.25781249999993,
+    "offset_s": 36.32656249999993,
+    "pitch": 80,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.36614583333326,
+    "offset_s": 36.39739583333326,
+    "pitch": 56,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.4963541666666,
+    "offset_s": 36.52968749999993,
+    "pitch": 61,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.4963541666666,
+    "offset_s": 36.558333333333266,
+    "pitch": 80,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.624999999999936,
+    "offset_s": 36.671874999999936,
+    "pitch": 64,
+    "velocity": 107,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.62812499999993,
+    "offset_s": 36.6760416666666,
+    "pitch": 81,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.6322916666666,
+    "offset_s": 36.6744791666666,
+    "pitch": 42,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.632812499999936,
+    "offset_s": 36.67395833333327,
+    "pitch": 30,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.63385416666662,
+    "offset_s": 36.79166666666662,
+    "pitch": 49,
+    "velocity": 93,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 36.63385416666662,
+    "offset_s": 36.72135416666662,
+    "pitch": 54,
+    "velocity": 99,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 36.75052083333327,
+    "offset_s": 36.8588541666666,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 36.75052083333327,
+    "offset_s": 36.8604166666666,
+    "pitch": 80,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.00624999999994,
+    "offset_s": 37.06874999999994,
+    "pitch": 68,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.00624999999994,
+    "offset_s": 37.0932291666666,
+    "pitch": 80,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.007812499999936,
+    "offset_s": 37.04583333333327,
+    "pitch": 42,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.01614583333327,
+    "offset_s": 37.07083333333327,
+    "pitch": 73,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.0166666666666,
+    "offset_s": 37.05208333333327,
+    "pitch": 30,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.26302083333327,
+    "offset_s": 37.32656249999994,
+    "pitch": 42,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.26302083333327,
+    "offset_s": 37.30052083333327,
+    "pitch": 49,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.263541666666605,
+    "offset_s": 37.29999999999994,
+    "pitch": 57,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.263541666666605,
+    "offset_s": 37.3041666666666,
+    "pitch": 69,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.27187499999994,
+    "offset_s": 37.41718749999994,
+    "pitch": 81,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.27239583333327,
+    "offset_s": 37.39531249999994,
+    "pitch": 76,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.38906249999994,
+    "offset_s": 37.58072916666661,
+    "pitch": 80,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.64427083333327,
+    "offset_s": 37.6963541666666,
+    "pitch": 57,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.644791666666606,
+    "offset_s": 37.97499999999994,
+    "pitch": 49,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.64531249999994,
+    "offset_s": 37.7432291666666,
+    "pitch": 42,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.64583333333327,
+    "offset_s": 37.76614583333327,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.648437499999936,
+    "offset_s": 37.743749999999935,
+    "pitch": 81,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.649999999999935,
+    "offset_s": 37.693229166666605,
+    "pitch": 30,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 37.88906249999994,
+    "offset_s": 37.92812499999994,
+    "pitch": 80,
+    "velocity": 76,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.01979166666662,
+    "offset_s": 38.07031249999995,
+    "pitch": 68,
+    "velocity": 88,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 38.02031249999994,
+    "offset_s": 38.06927083333327,
+    "pitch": 81,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.14583333333327,
+    "offset_s": 38.205208333333275,
+    "pitch": 73,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.14583333333327,
+    "offset_s": 38.20624999999994,
+    "pitch": 83,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.27968749999994,
+    "offset_s": 38.347395833333266,
+    "pitch": 37,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.2807291666666,
+    "offset_s": 38.32239583333327,
+    "pitch": 49,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.282812499999935,
+    "offset_s": 38.392187499999935,
+    "pitch": 68,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.2838541666666,
+    "offset_s": 38.368749999999935,
+    "pitch": 76,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.2838541666666,
+    "offset_s": 38.4166666666666,
+    "pitch": 80,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.398437499999936,
+    "offset_s": 38.434895833333265,
+    "pitch": 56,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.53020833333326,
+    "offset_s": 38.58020833333325,
+    "pitch": 81,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.53281249999993,
+    "offset_s": 38.57656249999992,
+    "pitch": 49,
+    "velocity": 67,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.65468749999992,
+    "offset_s": 38.69479166666659,
+    "pitch": 64,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.655208333333256,
+    "offset_s": 38.694270833333256,
+    "pitch": 49,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.65624999999992,
+    "offset_s": 38.71822916666659,
+    "pitch": 88,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.666666666666586,
+    "offset_s": 38.71614583333326,
+    "pitch": 37,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.78229166666659,
+    "offset_s": 38.834895833333256,
+    "pitch": 68,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 38.90781249999992,
+    "offset_s": 38.95052083333325,
+    "pitch": 88,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.04114583333325,
+    "offset_s": 39.09114583333325,
+    "pitch": 66,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.041666666666586,
+    "offset_s": 39.08697916666659,
+    "pitch": 71,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.04374999999992,
+    "offset_s": 39.08958333333325,
+    "pitch": 90,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.16510416666658,
+    "offset_s": 39.206770833333245,
+    "pitch": 69,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.167708333333245,
+    "offset_s": 39.22916666666658,
+    "pitch": 74,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.167708333333245,
+    "offset_s": 39.321874999999906,
+    "pitch": 92,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.302604166666576,
+    "offset_s": 39.36822916666657,
+    "pitch": 38,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.302604166666576,
+    "offset_s": 39.34427083333324,
+    "pitch": 54,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.30364583333324,
+    "offset_s": 39.341666666666576,
+    "pitch": 45,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.41927083333324,
+    "offset_s": 39.48437499999991,
+    "pitch": 90,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.67447916666657,
+    "offset_s": 39.764583333333235,
+    "pitch": 56,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.6765624999999,
+    "offset_s": 39.786458333333236,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.68697916666657,
+    "offset_s": 39.860937499999906,
+    "pitch": 88,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.688541666666566,
+    "offset_s": 39.78697916666657,
+    "pitch": 40,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.6890624999999,
+    "offset_s": 39.809895833333236,
+    "pitch": 47,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.92812499999991,
+    "offset_s": 39.97447916666657,
+    "pitch": 92,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 39.92968749999991,
+    "offset_s": 39.971874999999905,
+    "pitch": 66,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.05729166666657,
+    "offset_s": 40.08854166666657,
+    "pitch": 68,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.181249999999906,
+    "offset_s": 40.229687499999905,
+    "pitch": 73,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.296354166666575,
+    "offset_s": 40.55260416666656,
+    "pitch": 82,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.314062499999906,
+    "offset_s": 40.4374999999999,
+    "pitch": 68,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.31510416666657,
+    "offset_s": 40.43802083333323,
+    "pitch": 42,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.315624999999905,
+    "offset_s": 40.4140624999999,
+    "pitch": 90,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.31666666666657,
+    "offset_s": 40.3640624999999,
+    "pitch": 30,
+    "velocity": 75,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.436458333333235,
+    "offset_s": 40.48020833333323,
+    "pitch": 49,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.560937499999895,
+    "offset_s": 40.5968749999999,
+    "pitch": 54,
+    "velocity": 67,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.6890624999999,
+    "offset_s": 40.74010416666657,
+    "pitch": 61,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.81510416666657,
+    "offset_s": 40.92447916666657,
+    "pitch": 66,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 40.943229166666576,
+    "offset_s": 40.97395833333324,
+    "pitch": 61,
+    "velocity": 76,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 41.06770833333324,
+    "offset_s": 41.18072916666657,
+    "pitch": 58,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.07864583333324,
+    "offset_s": 41.13177083333324,
+    "pitch": 82,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.19739583333324,
+    "offset_s": 41.22864583333324,
+    "pitch": 54,
+    "velocity": 78,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.32656249999991,
+    "offset_s": 41.36458333333324,
+    "pitch": 74,
+    "velocity": 73,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.3374999999999,
+    "offset_s": 41.412499999999895,
+    "pitch": 50,
+    "velocity": 63,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 41.33854166666658,
+    "offset_s": 41.386458333333245,
+    "pitch": 38,
+    "velocity": 55,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.457291666666585,
+    "offset_s": 41.50364583333325,
+    "pitch": 74,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.459374999999916,
+    "offset_s": 41.574479166666585,
+    "pitch": 54,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.580729166666586,
+    "offset_s": 41.61822916666659,
+    "pitch": 57,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.71458333333325,
+    "offset_s": 41.87604166666658,
+    "pitch": 74,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.71614583333325,
+    "offset_s": 41.75885416666658,
+    "pitch": 38,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.71614583333325,
+    "offset_s": 41.75729166666658,
+    "pitch": 50,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.71614583333325,
+    "offset_s": 41.82864583333325,
+    "pitch": 62,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.83645833333325,
+    "offset_s": 41.87447916666658,
+    "pitch": 66,
+    "velocity": 72,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.96510416666658,
+    "offset_s": 42.01614583333324,
+    "pitch": 71,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 41.966666666666576,
+    "offset_s": 42.01302083333324,
+    "pitch": 62,
+    "velocity": 72,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.09114583333324,
+    "offset_s": 42.12968749999991,
+    "pitch": 74,
+    "velocity": 76,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.091666666666576,
+    "offset_s": 42.12916666666658,
+    "pitch": 57,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.220833333333225,
+    "offset_s": 42.251562499999885,
+    "pitch": 54,
+    "velocity": 74,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 42.224479166666576,
+    "offset_s": 42.268749999999905,
+    "pitch": 66,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.22552083333324,
+    "offset_s": 42.27395833333324,
+    "pitch": 78,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.34635416666657,
+    "offset_s": 42.3874999999999,
+    "pitch": 40,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.346874999999905,
+    "offset_s": 42.38697916666657,
+    "pitch": 28,
+    "velocity": 82,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.358333333333235,
+    "offset_s": 42.4812499999999,
+    "pitch": 76,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.473958333333236,
+    "offset_s": 42.5281249999999,
+    "pitch": 78,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.48020833333324,
+    "offset_s": 42.5234374999999,
+    "pitch": 47,
+    "velocity": 74,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.5937499999999,
+    "offset_s": 42.641666666666566,
+    "pitch": 56,
+    "velocity": 72,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.731770833333236,
+    "offset_s": 42.7796874999999,
+    "pitch": 40,
+    "velocity": 60,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.7343749999999,
+    "offset_s": 42.78072916666657,
+    "pitch": 76,
+    "velocity": 78,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.856770833333236,
+    "offset_s": 42.895833333333236,
+    "pitch": 78,
+    "velocity": 71,
+    "source": "piano"
+  },
+  {
+    "onset_s": 42.94791666666655,
+    "offset_s": 42.99114583333321,
+    "pitch": 64,
+    "velocity": 55,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 42.94947916666655,
+    "offset_s": 42.99114583333321,
+    "pitch": 59,
+    "velocity": 50,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 42.9734374999999,
+    "offset_s": 43.01354166666657,
+    "pitch": 56,
+    "velocity": 60,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.1078124999999,
+    "offset_s": 43.15260416666657,
+    "pitch": 64,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.2312499999999,
+    "offset_s": 43.339062499999905,
+    "pitch": 68,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.24010416666657,
+    "offset_s": 43.43020833333324,
+    "pitch": 81,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.36614583333324,
+    "offset_s": 43.61770833333324,
+    "pitch": 42,
+    "velocity": 63,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.36927083333324,
+    "offset_s": 43.478124999999906,
+    "pitch": 54,
+    "velocity": 75,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.38177083333324,
+    "offset_s": 43.43177083333324,
+    "pitch": 30,
+    "velocity": 61,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.485937499999906,
+    "offset_s": 43.52187499999991,
+    "pitch": 57,
+    "velocity": 67,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.61406249999991,
+    "offset_s": 43.646354166666576,
+    "pitch": 61,
+    "velocity": 72,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.74218749999991,
+    "offset_s": 43.826041666666576,
+    "pitch": 64,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.749479166666575,
+    "offset_s": 43.82656249999991,
+    "pitch": 42,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.75052083333324,
+    "offset_s": 43.78177083333324,
+    "pitch": 54,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.755729166666576,
+    "offset_s": 43.872916666666576,
+    "pitch": 78,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 43.99635416666658,
+    "offset_s": 44.033333333333246,
+    "pitch": 66,
+    "velocity": 73,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.12395833333321,
+    "offset_s": 44.15416666666655,
+    "pitch": 85,
+    "velocity": 76,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 44.12395833333325,
+    "offset_s": 44.24531249999992,
+    "pitch": 57,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.251562499999885,
+    "offset_s": 44.28593749999988,
+    "pitch": 61,
+    "velocity": 78,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 44.260416666666586,
+    "offset_s": 44.500520833333255,
+    "pitch": 83,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.261979166666585,
+    "offset_s": 44.477083333333255,
+    "pitch": 71,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.38229166666659,
+    "offset_s": 44.50104166666659,
+    "pitch": 54,
+    "velocity": 76,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.38385416666659,
+    "offset_s": 44.50104166666659,
+    "pitch": 39,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.49999999999992,
+    "offset_s": 44.61666666666659,
+    "pitch": 47,
+    "velocity": 76,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.633333333333255,
+    "offset_s": 44.686458333333256,
+    "pitch": 85,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.63385416666659,
+    "offset_s": 44.68541666666659,
+    "pitch": 54,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.75937499999992,
+    "offset_s": 44.80156249999992,
+    "pitch": 39,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.761979166666585,
+    "offset_s": 44.79999999999992,
+    "pitch": 59,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.76354166666658,
+    "offset_s": 44.824479166666585,
+    "pitch": 78,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.77239583333325,
+    "offset_s": 44.82499999999992,
+    "pitch": 75,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 44.889062499999916,
+    "offset_s": 44.92135416666658,
+    "pitch": 64,
+    "velocity": 66,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.01302083333325,
+    "offset_s": 45.05624999999992,
+    "pitch": 56,
+    "velocity": 67,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.01562499999987,
+    "offset_s": 45.05468749999987,
+    "pitch": 80,
+    "velocity": 66,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 45.14374999999992,
+    "offset_s": 45.197395833333246,
+    "pitch": 64,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.14739583333325,
+    "offset_s": 45.198958333333245,
+    "pitch": 81,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.27395833333325,
+    "offset_s": 45.42708333333325,
+    "pitch": 83,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.40729166666659,
+    "offset_s": 45.45104166666658,
+    "pitch": 54,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.40833333333325,
+    "offset_s": 45.47395833333325,
+    "pitch": 85,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.41197916666658,
+    "offset_s": 45.45260416666658,
+    "pitch": 38,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.41354166666658,
+    "offset_s": 45.498437499999916,
+    "pitch": 73,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.526041666666586,
+    "offset_s": 45.56458333333325,
+    "pitch": 57,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.52916666666658,
+    "offset_s": 45.566666666666585,
+    "pitch": 78,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.65520833333325,
+    "offset_s": 45.68802083333325,
+    "pitch": 62,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.78072916666658,
+    "offset_s": 45.824479166666585,
+    "pitch": 66,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.908854166666586,
+    "offset_s": 46.12552083333324,
+    "pitch": 69,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 45.91145833333325,
+    "offset_s": 45.96458333333325,
+    "pitch": 76,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.03072916666658,
+    "offset_s": 46.081770833333245,
+    "pitch": 73,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.03385416666658,
+    "offset_s": 46.10052083333324,
+    "pitch": 85,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.15520833333324,
+    "offset_s": 46.194791666666575,
+    "pitch": 57,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.28906249999991,
+    "offset_s": 46.33645833333324,
+    "pitch": 73,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.29166666666657,
+    "offset_s": 46.47447916666657,
+    "pitch": 83,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.419270833333236,
+    "offset_s": 46.54479166666656,
+    "pitch": 73,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.420833333333235,
+    "offset_s": 46.54270833333323,
+    "pitch": 49,
+    "velocity": 75,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.4218749999999,
+    "offset_s": 46.5203124999999,
+    "pitch": 37,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.538020833333235,
+    "offset_s": 46.58958333333323,
+    "pitch": 52,
+    "velocity": 67,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.540104166666566,
+    "offset_s": 46.611979166666565,
+    "pitch": 78,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.66197916666656,
+    "offset_s": 46.705729166666565,
+    "pitch": 56,
+    "velocity": 52,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.78072916666657,
+    "offset_s": 46.821354166666566,
+    "pitch": 61,
+    "velocity": 56,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.799479166666565,
+    "offset_s": 46.8921874999999,
+    "pitch": 76,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.91770833333323,
+    "offset_s": 46.95833333333323,
+    "pitch": 64,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 46.92135416666655,
+    "offset_s": 46.958854166666555,
+    "pitch": 76,
+    "velocity": 62,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 47.05104166666656,
+    "offset_s": 47.098437499999896,
+    "pitch": 76,
+    "velocity": 70,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.17552083333323,
+    "offset_s": 47.21874999999989,
+    "pitch": 64,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.17760416666656,
+    "offset_s": 47.21979166666656,
+    "pitch": 83,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.305208333333226,
+    "offset_s": 47.35885416666656,
+    "pitch": 68,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.44531249999989,
+    "offset_s": 47.54270833333322,
+    "pitch": 78,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.44635416666656,
+    "offset_s": 47.54062499999989,
+    "pitch": 38,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.44687499999989,
+    "offset_s": 47.56458333333322,
+    "pitch": 50,
+    "velocity": 71,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.44999999999989,
+    "offset_s": 47.54374999999989,
+    "pitch": 64,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.44999999999989,
+    "offset_s": 47.54374999999989,
+    "pitch": 69,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.56145833333322,
+    "offset_s": 47.59270833333322,
+    "pitch": 57,
+    "velocity": 60,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.683854166666556,
+    "offset_s": 47.727083333333226,
+    "pitch": 61,
+    "velocity": 63,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.81406249999989,
+    "offset_s": 47.84687499999989,
+    "pitch": 64,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 47.93645833333322,
+    "offset_s": 48.076041666666555,
+    "pitch": 69,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.068229166666555,
+    "offset_s": 48.124999999999886,
+    "pitch": 73,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.189062499999885,
+    "offset_s": 48.28593749999988,
+    "pitch": 57,
+    "velocity": 72,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.32343749999988,
+    "offset_s": 48.35729166666655,
+    "pitch": 61,
+    "velocity": 65,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.45052083333321,
+    "offset_s": 48.5661458333332,
+    "pitch": 40,
+    "velocity": 57,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.45156249999987,
+    "offset_s": 48.56406249999987,
+    "pitch": 73,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.568229166666534,
+    "offset_s": 48.708854166666534,
+    "pitch": 47,
+    "velocity": 61,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.57916666666653,
+    "offset_s": 48.632812499999865,
+    "pitch": 78,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.7005208333332,
+    "offset_s": 48.73124999999987,
+    "pitch": 56,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.834374999999866,
+    "offset_s": 48.889062499999866,
+    "pitch": 76,
+    "velocity": 107,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.8348958333332,
+    "offset_s": 48.87031249999987,
+    "pitch": 40,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.83541666666653,
+    "offset_s": 48.87031249999987,
+    "pitch": 28,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 48.95624999999987,
+    "offset_s": 49.006249999999866,
+    "pitch": 64,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.0755208333332,
+    "offset_s": 49.11874999999987,
+    "pitch": 56,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.082291666666535,
+    "offset_s": 49.12187499999987,
+    "pitch": 80,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.20677083333321,
+    "offset_s": 49.26197916666654,
+    "pitch": 64,
+    "velocity": 89,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 49.21041666666653,
+    "offset_s": 49.260416666666536,
+    "pitch": 81,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.33541666666654,
+    "offset_s": 49.39791666666654,
+    "pitch": 83,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.33697916666654,
+    "offset_s": 49.39635416666654,
+    "pitch": 68,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.471354166666536,
+    "offset_s": 49.67812499999987,
+    "pitch": 42,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.4723958333332,
+    "offset_s": 49.72291666666654,
+    "pitch": 30,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.47656249999987,
+    "offset_s": 50.11927083333321,
+    "pitch": 69,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.48437499999987,
+    "offset_s": 49.63281249999987,
+    "pitch": 76,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.484895833333205,
+    "offset_s": 49.631770833333206,
+    "pitch": 81,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.600520833333206,
+    "offset_s": 49.678645833333206,
+    "pitch": 80,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.84635416666654,
+    "offset_s": 50.073437499999876,
+    "pitch": 42,
+    "velocity": 81,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.84739583333321,
+    "offset_s": 49.88854166666654,
+    "pitch": 30,
+    "velocity": 77,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.848437499999875,
+    "offset_s": 50.09583333333321,
+    "pitch": 57,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.85937499999987,
+    "offset_s": 50.09583333333321,
+    "pitch": 68,
+    "velocity": 102,
+    "source": "piano"
+  },
+  {
+    "onset_s": 49.86041666666654,
+    "offset_s": 49.90989583333321,
+    "pitch": 81,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.09791666666654,
+    "offset_s": 50.140104166666546,
+    "pitch": 80,
+    "velocity": 68,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.22083333333319,
+    "offset_s": 50.25937499999986,
+    "pitch": 81,
+    "velocity": 74,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 50.22812499999986,
+    "offset_s": 50.25833333333319,
+    "pitch": 68,
+    "velocity": 86,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 50.35781249999987,
+    "offset_s": 50.39791666666654,
+    "pitch": 73,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.35781249999987,
+    "offset_s": 50.39999999999987,
+    "pitch": 83,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.4880208333332,
+    "offset_s": 50.65312499999986,
+    "pitch": 49,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.4895833333332,
+    "offset_s": 50.606770833333194,
+    "pitch": 37,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.49166666666653,
+    "offset_s": 50.56041666666653,
+    "pitch": 68,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.49166666666653,
+    "offset_s": 50.558333333333195,
+    "pitch": 76,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.4927083333332,
+    "offset_s": 50.65312499999986,
+    "pitch": 80,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.610937499999864,
+    "offset_s": 50.65156249999986,
+    "pitch": 56,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.74062499999986,
+    "offset_s": 50.77343749999986,
+    "pitch": 61,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.74062499999986,
+    "offset_s": 50.770833333333194,
+    "pitch": 81,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.86562499999986,
+    "offset_s": 50.93229166666652,
+    "pitch": 49,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.866666666666525,
+    "offset_s": 50.90885416666652,
+    "pitch": 64,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.86718749999986,
+    "offset_s": 50.930729166666524,
+    "pitch": 80,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.86927083333319,
+    "offset_s": 50.909374999999855,
+    "pitch": 37,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 50.98593749999986,
+    "offset_s": 51.04583333333319,
+    "pitch": 68,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.240624999999866,
+    "offset_s": 51.279166666666534,
+    "pitch": 66,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.24166666666653,
+    "offset_s": 51.2817708333332,
+    "pitch": 71,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.24947916666653,
+    "offset_s": 51.65468749999986,
+    "pitch": 80,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.3723958333332,
+    "offset_s": 51.65312499999986,
+    "pitch": 78,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.3755208333332,
+    "offset_s": 51.628645833333195,
+    "pitch": 69,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.37604166666653,
+    "offset_s": 51.65260416666653,
+    "pitch": 74,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.5083333333332,
+    "offset_s": 51.60572916666653,
+    "pitch": 54,
+    "velocity": 79,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.509374999999864,
+    "offset_s": 51.67499999999986,
+    "pitch": 38,
+    "velocity": 68,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.511458333333195,
+    "offset_s": 51.652083333333195,
+    "pitch": 45,
+    "velocity": 75,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.62239583333317,
+    "offset_s": 51.673958333333175,
+    "pitch": 80,
+    "velocity": 89,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 51.88177083333319,
+    "offset_s": 51.999479166666525,
+    "pitch": 56,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.88593749999986,
+    "offset_s": 52.022916666666525,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.88697916666653,
+    "offset_s": 51.97708333333319,
+    "pitch": 28,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.88697916666653,
+    "offset_s": 52.02239583333319,
+    "pitch": 81,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 51.888020833333194,
+    "offset_s": 52.022916666666525,
+    "pitch": 40,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.13333333333319,
+    "offset_s": 52.18802083333319,
+    "pitch": 78,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.13333333333319,
+    "offset_s": 52.18802083333319,
+    "pitch": 80,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.13437499999986,
+    "offset_s": 52.18749999999986,
+    "pitch": 66,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.25677083333319,
+    "offset_s": 52.30156249999986,
+    "pitch": 68,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.25781249999986,
+    "offset_s": 52.30520833333319,
+    "pitch": 81,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.38906249999986,
+    "offset_s": 52.44166666666653,
+    "pitch": 73,
+    "velocity": 106,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.38906249999986,
+    "offset_s": 52.55677083333319,
+    "pitch": 83,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.515624999999865,
+    "offset_s": 52.65104166666652,
+    "pitch": 49,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.51822916666653,
+    "offset_s": 52.581249999999855,
+    "pitch": 37,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.51874999999986,
+    "offset_s": 52.58072916666652,
+    "pitch": 68,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.519270833333195,
+    "offset_s": 52.58072916666652,
+    "pitch": 76,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.52968749999986,
+    "offset_s": 52.62656249999986,
+    "pitch": 80,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.63333333333319,
+    "offset_s": 52.67447916666652,
+    "pitch": 56,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.76614583333319,
+    "offset_s": 52.815624999999855,
+    "pitch": 80,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.89843749999986,
+    "offset_s": 53.04479166666652,
+    "pitch": 64,
+    "velocity": 106,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.899479166666524,
+    "offset_s": 52.998958333333185,
+    "pitch": 81,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.901562499999855,
+    "offset_s": 53.04895833333319,
+    "pitch": 54,
+    "velocity": 104,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.905729166666525,
+    "offset_s": 53.06510416666652,
+    "pitch": 42,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.907291666666524,
+    "offset_s": 53.065624999999855,
+    "pitch": 49,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 52.90833333333319,
+    "offset_s": 52.94895833333319,
+    "pitch": 30,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.02291666666652,
+    "offset_s": 53.131770833333185,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.25624999999985,
+    "offset_s": 53.32499999999984,
+    "pitch": 73,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.27552083333318,
+    "offset_s": 53.39322916666651,
+    "pitch": 68,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.276041666666515,
+    "offset_s": 53.39374999999984,
+    "pitch": 80,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.27708333333316,
+    "offset_s": 53.307291666666494,
+    "pitch": 49,
+    "velocity": 85,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 53.279687499999845,
+    "offset_s": 53.322395833333175,
+    "pitch": 42,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.28020833333318,
+    "offset_s": 53.32291666666651,
+    "pitch": 30,
+    "velocity": 76,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.53906249999982,
+    "offset_s": 53.57968749999982,
+    "pitch": 57,
+    "velocity": 105,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 53.539062499999844,
+    "offset_s": 53.58124999999984,
+    "pitch": 42,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.53958333333318,
+    "offset_s": 53.57760416666651,
+    "pitch": 30,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.53958333333318,
+    "offset_s": 53.58072916666651,
+    "pitch": 69,
+    "velocity": 102,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.541145833333175,
+    "offset_s": 53.69427083333318,
+    "pitch": 81,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.54791666666651,
+    "offset_s": 53.60104166666651,
+    "pitch": 76,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.654687499999845,
+    "offset_s": 53.85624999999985,
+    "pitch": 80,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.91145833333318,
+    "offset_s": 53.948958333333174,
+    "pitch": 30,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.91197916666651,
+    "offset_s": 53.95052083333317,
+    "pitch": 42,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.912499999999824,
+    "offset_s": 53.94843749999983,
+    "pitch": 49,
+    "velocity": 88,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 53.920312499999845,
+    "offset_s": 53.99635416666651,
+    "pitch": 68,
+    "velocity": 104,
+    "source": "piano"
+  },
+  {
+    "onset_s": 53.92083333333318,
+    "offset_s": 53.97395833333317,
+    "pitch": 81,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.04687499999982,
+    "offset_s": 54.08958333333315,
+    "pitch": 57,
+    "velocity": 79,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 54.16458333333318,
+    "offset_s": 54.20208333333318,
+    "pitch": 66,
+    "velocity": 69,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.29270833333318,
+    "offset_s": 54.32343749999985,
+    "pitch": 68,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.29374999999985,
+    "offset_s": 54.346354166666515,
+    "pitch": 81,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.422395833333184,
+    "offset_s": 54.46562499999985,
+    "pitch": 83,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.42291666666652,
+    "offset_s": 54.48177083333318,
+    "pitch": 73,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.550520833333145,
+    "offset_s": 54.58124999999981,
+    "pitch": 49,
+    "velocity": 90,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 54.558854166666514,
+    "offset_s": 54.623437499999845,
+    "pitch": 68,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.55937499999985,
+    "offset_s": 54.59895833333318,
+    "pitch": 37,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.55937499999985,
+    "offset_s": 54.60052083333318,
+    "pitch": 76,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.55989583333318,
+    "offset_s": 54.66979166666651,
+    "pitch": 80,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.67239583333318,
+    "offset_s": 54.717187499999845,
+    "pitch": 56,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.804166666666475,
+    "offset_s": 54.85572916666648,
+    "pitch": 61,
+    "velocity": 91,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 54.80781249999984,
+    "offset_s": 54.85624999999984,
+    "pitch": 81,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.931770833333175,
+    "offset_s": 54.97135416666651,
+    "pitch": 49,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.931770833333175,
+    "offset_s": 54.97031249999984,
+    "pitch": 64,
+    "velocity": 105,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.933333333333174,
+    "offset_s": 54.972395833333174,
+    "pitch": 37,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 54.933333333333174,
+    "offset_s": 54.99479166666651,
+    "pitch": 88,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.05937499999984,
+    "offset_s": 55.111458333333175,
+    "pitch": 68,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.18072916666651,
+    "offset_s": 55.22812499999984,
+    "pitch": 88,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.31510416666651,
+    "offset_s": 55.3682291666665,
+    "pitch": 90,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.31562499999984,
+    "offset_s": 55.365104166666505,
+    "pitch": 71,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.31666666666651,
+    "offset_s": 55.368749999999835,
+    "pitch": 66,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.44218749999979,
+    "offset_s": 55.71562499999978,
+    "pitch": 86,
+    "velocity": 95,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 55.44218749999983,
+    "offset_s": 55.48489583333316,
+    "pitch": 69,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.4432291666665,
+    "offset_s": 55.73854166666649,
+    "pitch": 92,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.444270833333164,
+    "offset_s": 55.48281249999983,
+    "pitch": 74,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.45364583333316,
+    "offset_s": 55.506770833333164,
+    "pitch": 93,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.579166666666495,
+    "offset_s": 55.64479166666649,
+    "pitch": 54,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.58020833333316,
+    "offset_s": 55.66927083333316,
+    "pitch": 38,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.58124999999983,
+    "offset_s": 55.645312499999825,
+    "pitch": 45,
+    "velocity": 104,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.69166666666649,
+    "offset_s": 55.80885416666649,
+    "pitch": 90,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.95052083333316,
+    "offset_s": 56.06354166666648,
+    "pitch": 56,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.95312499999982,
+    "offset_s": 56.040624999999814,
+    "pitch": 68,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.95416666666649,
+    "offset_s": 56.042708333333145,
+    "pitch": 88,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.96458333333315,
+    "offset_s": 55.99895833333315,
+    "pitch": 28,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 55.965104166666485,
+    "offset_s": 56.01666666666648,
+    "pitch": 40,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.201041666666484,
+    "offset_s": 56.25208333333315,
+    "pitch": 92,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.20364583333315,
+    "offset_s": 56.249999999999815,
+    "pitch": 66,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.32499999999981,
+    "offset_s": 56.36718749999981,
+    "pitch": 68,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.45677083333314,
+    "offset_s": 56.50520833333314,
+    "pitch": 73,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.5703124999998,
+    "offset_s": 56.6218749999998,
+    "pitch": 82,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.57760416666647,
+    "offset_s": 56.6218749999998,
+    "pitch": 30,
+    "velocity": 80,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.5796874999998,
+    "offset_s": 56.64427083333313,
+    "pitch": 42,
+    "velocity": 89,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.58177083333313,
+    "offset_s": 56.644791666666464,
+    "pitch": 68,
+    "velocity": 100,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.590104166666464,
+    "offset_s": 56.6906249999998,
+    "pitch": 90,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.70677083333313,
+    "offset_s": 56.74010416666646,
+    "pitch": 49,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.83333333333313,
+    "offset_s": 56.87291666666646,
+    "pitch": 54,
+    "velocity": 82,
+    "source": "piano"
+  },
+  {
+    "onset_s": 56.95520833333313,
+    "offset_s": 57.016145833333134,
+    "pitch": 61,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.0890624999998,
+    "offset_s": 57.22395833333313,
+    "pitch": 66,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.08958333333313,
+    "offset_s": 57.15572916666646,
+    "pitch": 78,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.20885416666646,
+    "offset_s": 57.2453124999998,
+    "pitch": 61,
+    "velocity": 75,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.33958333333313,
+    "offset_s": 57.48020833333313,
+    "pitch": 58,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.346354166666465,
+    "offset_s": 57.408854166666465,
+    "pitch": 82,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.472916666666464,
+    "offset_s": 57.50520833333313,
+    "pitch": 54,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.604166666666444,
+    "offset_s": 57.84843749999977,
+    "pitch": 57,
+    "velocity": 97,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 57.613541666666464,
+    "offset_s": 57.71249999999979,
+    "pitch": 42,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.61458333333313,
+    "offset_s": 57.66718749999979,
+    "pitch": 49,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.617187499999794,
+    "offset_s": 57.664062499999794,
+    "pitch": 30,
+    "velocity": 83,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.61874999999979,
+    "offset_s": 57.66822916666646,
+    "pitch": 76,
+    "velocity": 103,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.619270833333125,
+    "offset_s": 57.71354166666646,
+    "pitch": 81,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.61979166666646,
+    "offset_s": 57.66510416666646,
+    "pitch": 69,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.72708333333313,
+    "offset_s": 57.82864583333313,
+    "pitch": 80,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.98593749999979,
+    "offset_s": 58.03802083333312,
+    "pitch": 42,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.98749999999979,
+    "offset_s": 58.03802083333312,
+    "pitch": 57,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.99062499999979,
+    "offset_s": 58.10677083333312,
+    "pitch": 68,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.99218749999979,
+    "offset_s": 58.032812499999785,
+    "pitch": 30,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 57.99479166666645,
+    "offset_s": 58.06093749999979,
+    "pitch": 81,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.231249999999754,
+    "offset_s": 58.292187499999756,
+    "pitch": 78,
+    "velocity": 91,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 58.23124999999979,
+    "offset_s": 58.26614583333312,
+    "pitch": 66,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.232291666666455,
+    "offset_s": 58.29062499999979,
+    "pitch": 80,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.35572916666646,
+    "offset_s": 58.41041666666646,
+    "pitch": 57,
+    "velocity": 88,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.36093749999979,
+    "offset_s": 58.40885416666646,
+    "pitch": 68,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.361458333333125,
+    "offset_s": 58.41093749999979,
+    "pitch": 81,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.486458333333125,
+    "offset_s": 58.54583333333313,
+    "pitch": 73,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.49374999999979,
+    "offset_s": 58.54635416666646,
+    "pitch": 83,
+    "velocity": 98,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.61666666666646,
+    "offset_s": 58.66145833333312,
+    "pitch": 49,
+    "velocity": 87,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.617187499999794,
+    "offset_s": 58.66406249999979,
+    "pitch": 37,
+    "velocity": 84,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.62239583333312,
+    "offset_s": 58.70989583333312,
+    "pitch": 76,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.62343749999979,
+    "offset_s": 58.729687499999784,
+    "pitch": 80,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.624479166666454,
+    "offset_s": 58.710416666666454,
+    "pitch": 68,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.73697916666645,
+    "offset_s": 58.85260416666645,
+    "pitch": 49,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.73697916666645,
+    "offset_s": 58.84739583333312,
+    "pitch": 56,
+    "velocity": 86,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.868749999999785,
+    "offset_s": 58.92239583333311,
+    "pitch": 61,
+    "velocity": 85,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.872395833333115,
+    "offset_s": 58.920833333333114,
+    "pitch": 80,
+    "velocity": 92,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.997395833333115,
+    "offset_s": 59.05989583333311,
+    "pitch": 49,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.997395833333115,
+    "offset_s": 59.03489583333311,
+    "pitch": 64,
+    "velocity": 107,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.997395833333115,
+    "offset_s": 59.08229166666644,
+    "pitch": 80,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 58.99791666666645,
+    "offset_s": 59.03697916666644,
+    "pitch": 37,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.00572916666645,
+    "offset_s": 59.05833333333311,
+    "pitch": 68,
+    "velocity": 101,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.00833333333311,
+    "offset_s": 59.05989583333311,
+    "pitch": 76,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.12083333333311,
+    "offset_s": 59.17604166666644,
+    "pitch": 68,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.24531249999975,
+    "offset_s": 59.289062499999744,
+    "pitch": 49,
+    "velocity": 70,
+    "source": "hpss_harmonic"
+  },
+  {
+    "onset_s": 59.24635416666644,
+    "offset_s": 59.291666666666444,
+    "pitch": 80,
+    "velocity": 94,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.37656249999978,
+    "offset_s": 59.40729166666644,
+    "pitch": 68,
+    "velocity": 91,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.377604166666444,
+    "offset_s": 59.430208333333105,
+    "pitch": 83,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.498437499999774,
+    "offset_s": 59.54635416666644,
+    "pitch": 68,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.50416666666644,
+    "offset_s": 59.568749999999774,
+    "pitch": 88,
+    "velocity": 99,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.504687499999775,
+    "offset_s": 59.54687499999977,
+    "pitch": 76,
+    "velocity": 97,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.633333333333105,
+    "offset_s": 59.778124999999775,
+    "pitch": 69,
+    "velocity": 96,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.639062499999774,
+    "offset_s": 59.75572916666644,
+    "pitch": 38,
+    "velocity": 90,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.63958333333311,
+    "offset_s": 59.75572916666644,
+    "pitch": 54,
+    "velocity": 95,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.64010416666644,
+    "offset_s": 59.756249999999774,
+    "pitch": 45,
+    "velocity": 93,
+    "source": "piano"
+  },
+  {
+    "onset_s": 59.75781249999977,
+    "offset_s": 59.82447916666644,
+    "pitch": 86,
+    "velocity": 93,
+    "source": "piano"
+  }
+]

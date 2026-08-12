@@ -1,0 +1,36 @@
+# Pilot: Dir BS-Roformer piano stem clip (no GT)
+# Paths relative to repository root.
+
+track: clean_amt
+role: stem_dir_clip
+
+input:
+  path: audio/midi_eval/target_stems/Dir/bs_roformer_piano_t30_60s.wav
+  gt_midi: null
+  start_s: 0.0
+  end_s: null
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+# Full stem pointer (do not copy; optional later runs)
+full_stem_pointer: out/stems/Dir/bs_roformer/piano.wav
+
+# Dry smoke (no GT) — optional third run
+dry:
+  role: dry_bach
+  path: audio/midi_eval/dry_solo/bach_wtc_martins_lp_t120_60s.wav
+  gt_midi: null
+  start_s: 0.0
+  end_s: null

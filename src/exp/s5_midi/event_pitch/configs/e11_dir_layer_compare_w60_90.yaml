@@ -1,0 +1,49 @@
+# event_pitch E11 — layer compare @ 60–90s (rescue-dense window)
+# Same method as e11_dir_layer_compare_pilot.yaml; window chosen because
+# 30–60s has only ~1 rescue slot vs fuse, while 60–90s is ~all rescue.
+track: event_pitch
+stage: E11
+role: dir_506_layer_compare_w60_90
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+layers:
+  piano: out/stems/Dir/bs_roformer/piano.wav
+  harmonic: out/stems/Dir/event_sculpt/hpss_harmonic.wav
+  synthesis: out/stems/Dir/event_sculpt/lpc_synthesis.wav
+
+fuse_ro:
+  notes_json: src/exp/s5_midi/midi_fuse/out/20260812_midi_fuse_clip_harmonic/notes.json
+  tol_s: 0.05
+
+pilot:
+  start_s: 60.0
+  end_s: 90.0
+
+pitch:
+  method: cqt_harmonic_salience
+  delay_s: 0.010
+  post_s: 0.093
+  fmin_hz: 65.41
+  fmax_hz: 2093.0
+  bins_per_octave: 36
+  n_harmonics: 5
+  harmonic_decay: 0.6
+  fallback_pitch: 60
+
+agree:
+  octave_ok: true
+
+note_off:
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110
+  pre_s: 0.02
+  post_s: 0.10

@@ -1,0 +1,60 @@
+# event_pitch E12 — independent estimators + octave cross-check (v1 §11-b hint)
+# Primary listen window: 60–90s (all rescue vs fuse)
+track: event_pitch
+stage: E12
+role: dir_506_independent_octave_w60_90
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+# Single frequency-preserving layer (not multi-layer same-family vote)
+audio:
+  path: out/stems/Dir/event_sculpt/hpss_harmonic.wav
+  # velocity/RMS from piano stem
+  velocity_path: out/stems/Dir/bs_roformer/piano.wav
+
+fuse_ro:
+  notes_json: src/exp/s5_midi/midi_fuse/out/20260812_midi_fuse_clip_harmonic/notes.json
+  tol_s: 0.05
+
+pilot:
+  start_s: 60.0
+  end_s: 90.0
+
+# Melody-band lens (v1 L_spectral spirit) — suppress bass pull
+melody_band:
+  fmin_hz: 164.81   # E3
+  fmax_hz: 1318.5   # E6
+
+pitch:
+  delay_s: 0.010
+  post_s: 0.120
+  # old-plus-new: subtract pre-onset mean CQT before salience
+  pre_s: 0.080
+  bins_per_octave: 36
+  n_harmonics: 5
+  harmonic_decay: 0.6
+  fallback_pitch: 60
+  # pyin needs a slightly longer look for stability
+  pyin_post_s: 0.180
+  pyin_frame_length: 2048
+  pyin_hop_length: 256
+
+agree:
+  # §11-b style: if |midi_cqt - midi_pyin| == 12 → prefer pyin (periodicity)
+  octave_prefer: pyin
+  # exact match → that pitch; else prefer voiced pyin if ok else cqt_delta
+  mismatch_prefer: pyin
+
+note_off:
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110
+  pre_s: 0.02
+  post_s: 0.10

@@ -1,0 +1,23 @@
+# Full-length Dir piano → Transkun (absolute times from 0)
+track: clean_amt
+role: stem_dir_piano_full
+
+input:
+  path: out/stems/Dir/bs_roformer/piano.wav
+  gt_midi: null
+  start_s: 0.0
+  end_s: null
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"

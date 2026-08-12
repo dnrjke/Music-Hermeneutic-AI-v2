@@ -1,0 +1,34 @@
+# Pilot GT default: MAPS AkPnBcht polyphony_baroque (simpler texture; user preference)
+# Paths relative to repository root.
+# MAESTRO remains optional cross (see cross:).
+
+track: clean_amt
+role: gt_maps_polyphony_baroque
+
+input:
+  path: audio/midi_eval/paired_gt/maps_akpnbcht/polyphony_baroque/audio.wav
+  gt_midi: audio/midi_eval/paired_gt/maps_akpnbcht/polyphony_baroque/gt.mid
+  start_s: 0.0
+  end_s: 60.0   # short pilot window; null = full file
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+# Optional cross (harder / denser dry piano)
+cross:
+  role: gt_maestro_polyphony_baroque
+  path: audio/midi_eval/paired_gt/maestro_v3/polyphony_baroque/audio.flac
+  gt_midi: audio/midi_eval/paired_gt/maestro_v3/polyphony_baroque/gt.midi
+  start_s: 0.0
+  end_s: 60.0

@@ -1,0 +1,37 @@
+# event_pitch E7 — OaF-style / ByteDance onset map @ 506
+track: event_pitch
+stage: E7
+role: dir_506_oaf_onset_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+  clip_pad_s: 1.0
+
+pitch:
+  method: oaf_onset
+  backend: bytedance_hr  # piano_transcription_inference onset regress
+  half_win_frames: 1
+  fallback_pitch: 60
+  midi_min: 21
+  midi_max: 108
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110
+  pre_s: 0.02
+  post_s: 0.10

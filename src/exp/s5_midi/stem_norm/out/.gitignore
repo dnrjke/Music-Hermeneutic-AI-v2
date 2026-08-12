@@ -1,0 +1,3 @@
+# stem_norm outputs (gitignored locally if large; keep manifests in tree if small)
+*
+!.gitignore

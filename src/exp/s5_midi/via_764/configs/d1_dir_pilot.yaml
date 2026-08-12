@@ -1,0 +1,37 @@
+# via_764 D1 — Dir 506 onset + top-1 pitch (pilot 30–60s)
+# Paths relative to repository root.
+
+track: via_764
+stage: D1
+role: dir_506_pitch_top1_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+pitch:
+  method: pyin_top1
+  pre_s: 0.03
+  post_s: 0.12
+  fmin_hz: 43.066  # librosa pyin frame_length=2048 권장 하한
+  fmax_hz: 4186.0  # C8
+  fallback_pitch: 60
+  frame_length: 2048
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110

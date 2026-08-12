@@ -1,0 +1,39 @@
+# event_pitch E10 — evaluate 506 with pitch via clip⊕harmonic RO × masks
+track: event_pitch
+stage: E10
+role: dir_506_fuse_mask_eval_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  piano: out/stems/Dir/bs_roformer/piano.wav
+  k_env: out/stems/Dir/event_sculpt/tilt/perc_tilt_k_env_material_mono.wav
+
+fuse:
+  # RO — locked go mid notes (absolute seconds)
+  notes_json: src/exp/s5_midi/midi_fuse/out/20260812_midi_fuse_clip_harmonic/notes.json
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+gate_for_stem_env:
+  pre_s: 0.02
+  post_s: 0.12
+
+select:
+  # one fuse note per 506 peak (event count anchor = n_506; MIDI notes = matches only)
+  tol_s: 0.05
+  # pick among candidates: max vel * mask(t)
+  score: vel_x_mask
+  # also emit poly variant: all fuse notes within tol (count can exceed 506)
+  also_poly: true
+
+masks:
+  names:
+    - soft506
+    - gated_stem_env
+    - sf_kenv_x_gated

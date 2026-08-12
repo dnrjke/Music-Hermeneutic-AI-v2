@@ -1,0 +1,29 @@
+# Transcribe stem_norm v1 output (same window as stem_dir_clip listen)
+# Run normalize_v1.py first → src/exp/s5_midi/stem_norm/out/normalized_v1.wav
+
+track: clean_amt
+role: stem_dir_norm_v1
+
+input:
+  path: src/exp/s5_midi/stem_norm/out/normalized_v1.wav
+  gt_midi: null
+  start_s: 30.0
+  end_s: 60.0
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+provenance:
+  stem_norm: norm_v1_attack_lowblend
+  compare_to: stem_dir_clip

@@ -1,0 +1,26 @@
+# via_764 D0 — Dir 506 onset → placeholder MIDI
+# Paths relative to repository root.
+
+track: via_764
+stage: D0
+role: dir_506_onset_placeholder
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+midi:
+  placeholder_pitch: 60
+  placeholder_vel: 80
+  note_dur_s: 0.05
+
+sonify:
+  piano_gain_low: 0.20
+  click_freq_hz: 5000.0
+  click_dur_ms: 12.0
+  click_amp: 0.7
+  window_t30_60: true

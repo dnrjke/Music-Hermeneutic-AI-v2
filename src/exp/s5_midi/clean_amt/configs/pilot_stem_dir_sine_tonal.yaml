@@ -1,0 +1,25 @@
+﻿track: clean_amt
+role: stem_dir_sine_tonal
+
+input:
+  path: out/stems/Dir/event_sculpt/sine_tonal.wav
+  gt_midi: null
+  start_s: 30.0
+  end_s: 60.0
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+provenance:
+  session: stem_event_sculpt pass1 (session 13)

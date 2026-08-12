@@ -1,0 +1,33 @@
+{
+  "run_id": "20260812_midi_fuse_piano_harmonic_full",
+  "created_utc": "2026-08-12T05:07:33.692169+00:00",
+  "track": "midi_fuse",
+  "recipe": "fuse_v1_piano_harmonic_full",
+  "name": "piano_harmonic_full",
+  "window_abs_s": "full",
+  "tol_s": 0.03,
+  "inputs": {
+    "base_role": "stem_dir_piano_full",
+    "base_run": "E:\\game\\Music Hermeneutic AI v2\\src\\exp\\s5_midi\\clean_amt\\out\\20260812_clean_amt_transkun_stem_dir_piano_full",
+    "rescue_role": "stem_dir_hpss_harmonic_full",
+    "rescue_run": "E:\\game\\Music Hermeneutic AI v2\\src\\exp\\s5_midi\\clean_amt\\out\\20260812_clean_amt_transkun_stem_dir_hpss_harmonic_full"
+  },
+  "stats": {
+    "n_base": 1667,
+    "n_rescue_in": 1662,
+    "n_added": 86,
+    "n_skipped_overlap": 1576,
+    "n_fused": 1753,
+    "tol_s": 0.03
+  },
+  "outputs": {
+    "piano_mid": "piano.mid",
+    "notes_json": "notes.json",
+    "listen_t30_60": "piano_t30_60_listen_t0.mid",
+    "listen_t60_90": "piano_t60_90_listen_t0.mid",
+    "piano_base_only": "piano_base_only.mid",
+    "harmonic_rescue_in": "harmonic_rescue_in.mid"
+  },
+  "notes": "Full-length counterpart of locked clip⊕harmonic: keep piano Transkun; add hpss_harmonic Transkun if no same-pitch within tol. Pilot clip⊕harmonic remains 30-60 only.",
+  "pilot_clip_harmonic": "out/20260812_midi_fuse_clip_harmonic (30-60 only; not replaced)"
+}

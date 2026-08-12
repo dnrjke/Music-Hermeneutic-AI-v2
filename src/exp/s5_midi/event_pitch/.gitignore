@@ -1,0 +1,4 @@
+# Experiment outs (regenerable; keep tree small)
+out/
+weights/
+*.pth

@@ -1,0 +1,40 @@
+# via_764 D1v2 — pyin no-go 후: harmonic_peak top-1 (onset=506 유지)
+# Paths relative to repository root.
+
+track: via_764
+stage: D1
+role: dir_506_pitch_harmonic_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+pitch:
+  method: harmonic_peak   # harmonic_peak | spectral_peak | pyin_top1
+  pre_s: 0.02
+  post_s: 0.10
+  fmin_hz: 65.41          # C2 — 과도한 저역 끌어올림 방지
+  fmax_hz: 2093.0         # C7
+  fallback_pitch: 60
+  n_fft: 4096
+  n_harmonics: 5
+  midi_lo: 36             # C2
+  midi_hi: 96             # C7
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110

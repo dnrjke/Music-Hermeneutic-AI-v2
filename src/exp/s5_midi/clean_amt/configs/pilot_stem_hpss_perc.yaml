@@ -1,0 +1,30 @@
+# Dir piano stem with HPSS harmonic component removed (session 13)
+# chain: bs_roformer/piano → HPSS → hpss_percussive
+# Window t=30–60s.
+
+track: clean_amt
+role: stem_dir_hpss_percussive
+
+input:
+  path: out/stems/Dir/event_sculpt/hpss_percussive.wav
+  gt_midi: null
+  start_s: 30.0
+  end_s: 60.0
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+provenance:
+  session: "HANDOFF session 13 / stem_event_sculpt run_passes.py"
+  note: "HPSS로 하모닉 축 제거한 perc (506 tilt의 상위 소재)"

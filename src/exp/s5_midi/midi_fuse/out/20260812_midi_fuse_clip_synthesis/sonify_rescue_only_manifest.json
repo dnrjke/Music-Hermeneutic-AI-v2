@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-08-12T02:07:16.316948+00:00",
+  "track": "midi_fuse",
+  "sonify": "rescue_only_lowpiano_3k",
+  "fuse_run": "E:\\game\\Music Hermeneutic AI v2\\src\\exp\\s5_midi\\midi_fuse\\out\\20260812_midi_fuse_clip_synthesis",
+  "source_tag": "lpc_synthesis",
+  "n_clicks": 12,
+  "onset_s": [
+    30.769791666666666,
+    31.15625,
+    34.59166666666666,
+    35.859375,
+    38.52604166666667,
+    39.03750000000001,
+    40.94375000000001,
+    42.22395833333334,
+    51.887499999999996,
+    53.021354166666654,
+    53.54010416666665,
+    58.23124999999997
+  ],
+  "wav": "clip_synthesis_rescueOnly3k_low_g0p20_클릭_p12.wav",
+  "wav_window_30_60": "clip_synthesis_rescueOnly3k_low_g0p20_t30_60_클릭_p12.wav",
+  "piano_gain_low": 0.2,
+  "click_freq_hz": 3000.0
+}

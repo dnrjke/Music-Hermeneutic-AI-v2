@@ -1,0 +1,33 @@
+# event_pitch E8 — 506-gated stem → Transkun (+ harmonic rescue fuse)
+track: event_pitch
+stage: E8
+role: dir_506_gate_amt_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  piano: out/stems/Dir/bs_roformer/piano.wav
+  harmonic: out/stems/Dir/event_sculpt/hpss_harmonic.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+# Modes run in one script: hard_window (B) and duck (D)
+gate:
+  pre_s: 0.02
+  post_s: 0.100
+  duck_gain: 0.01          # ~-40 dB outside peaks
+  duck_fade_s: 0.015
+
+fuse:
+  tol_s: 0.03
+  # base = gated piano AMT; rescue = gated harmonic AMT
+
+transkun:
+  device: cuda
+
+note_off_cap: false  # keep AMT offsets

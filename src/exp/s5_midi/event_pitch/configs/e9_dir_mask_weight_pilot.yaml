@@ -1,0 +1,48 @@
+# event_pitch E9 — astronomy-style mask×full-stem (not AMT-on-gated)
+track: event_pitch
+stage: E9
+role: dir_506_mask_weight_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  piano: out/stems/Dir/bs_roformer/piano.wav
+  # detection material (506 family) — often better attack mask than hard gate
+  k_env: out/stems/Dir/event_sculpt/tilt/perc_tilt_k_env_material_mono.wav
+  harmonic: out/stems/Dir/event_sculpt/hpss_harmonic.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+gate_for_stem_env:
+  pre_s: 0.02
+  post_s: 0.12
+  # soft hann lobes for gated-stem envelope mask
+  soft: true
+
+masks:
+  # which masks to build/apply
+  names:
+    - gated_stem_env   # |soft-gated piano| envelope — pitch-bearing local audio as weight
+    - soft506          # peak kernels only
+    - sf_piano         # SuperFlux on piano
+    - sf_kenv          # SuperFlux on k_env material (506 detection family)
+    - sf_kenv_x_gated  # product (attack ∩ pitch-local)
+
+select:
+  # for each 506: pick AMT note in ±tol with max score = vel * mask(t)
+  tol_s: 0.05
+  # also keep high-mask AMT notes even if not nearest (rescue), mask >= this quantile of mask@506
+  rescue_quantile: 0.6
+
+transkun:
+  device: cuda
+
+onset_reweight:
+  # ByteDance onset × mask → argmax at each 506
+  enable: true
+  half_win_frames: 1

@@ -1,0 +1,35 @@
+# via_764 D1v2 alternate — raw spectral peak (compare to harmonic)
+track: via_764
+stage: D1
+role: dir_506_pitch_spectral_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+pitch:
+  method: spectral_peak
+  pre_s: 0.02
+  post_s: 0.10
+  fmin_hz: 65.41
+  fmax_hz: 2093.0
+  fallback_pitch: 60
+  n_fft: 4096
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110

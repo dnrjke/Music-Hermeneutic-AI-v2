@@ -1,0 +1,39 @@
+# event_pitch E6 — 88-key triangular filterbank SuperFlux @ 506
+track: event_pitch
+stage: E6
+role: dir_506_88key_sf_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+pitch:
+  method: piano88_superflux
+  midi_lo: 21
+  midi_hi: 108
+  lag: 2
+  max_size: 1
+  hop_length: 256
+  n_fft: 4096
+  half_win_frames: 1
+  fallback_pitch: 60
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110
+  pre_s: 0.02
+  post_s: 0.10

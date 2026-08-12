@@ -1,0 +1,36 @@
+# D1: pitch from midi_fuse clip⊕harmonic (RO)
+track: via_764
+stage: D1
+role: dir_506_pitch_fuse_transplant
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+
+fuse:
+  notes_json: src/exp/s5_midi/midi_fuse/out/20260812_midi_fuse_clip_harmonic/notes.json
+  tol_s: 0.05
+  pick: max_vel
+  fallback_pitch: 60
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110
+
+vel_window:
+  pre_s: 0.02
+  post_s: 0.10

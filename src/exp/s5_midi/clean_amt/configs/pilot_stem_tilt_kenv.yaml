@@ -1,0 +1,30 @@
+# Exact audio material under 502 adaptive peaks (⊂ 506):
+# perc_tilt_high → mono-mean → K-weight = perc_tilt_k_env_material_mono
+# Window t=30–60s to match stem_dir_clip listen window.
+
+track: clean_amt
+role: stem_dir_tilt_kenv_material
+
+input:
+  path: out/stems/Dir/event_sculpt/tilt/perc_tilt_k_env_material_mono.wav
+  gt_midi: null
+  start_s: 30.0
+  end_s: 60.0
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+provenance:
+  pipeline: Docs/dir_764_pipeline.md §2 (506)
+  chain: "perc_tilt_high → mono → K-weight (same as perc_tilt_k_env_adaptive 502)"

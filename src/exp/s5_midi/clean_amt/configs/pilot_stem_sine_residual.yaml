@@ -1,0 +1,31 @@
+# Dir piano stem with tonal/harmonic peaks suppressed (session 13 sinusoidal)
+# chain: bs_roformer/piano → sine local-max∧p90 → residual = y − tonal
+# User called sine_tonal “배음”; this is the complementary residual.
+# Window t=30–60s (match stem_dir_clip).
+
+track: clean_amt
+role: stem_dir_sine_residual
+
+input:
+  path: out/stems/Dir/event_sculpt/sine_residual.wav
+  gt_midi: null
+  start_s: 30.0
+  end_s: 60.0
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+provenance:
+  session: "HANDOFF session 13 / stem_event_sculpt run_passes.py"
+  note: "하모닉스(톤 피크)만 억제 = sine_residual"

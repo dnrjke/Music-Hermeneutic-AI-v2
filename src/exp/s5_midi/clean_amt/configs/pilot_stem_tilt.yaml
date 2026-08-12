@@ -1,0 +1,33 @@
+# Pilot: Dir 506-path tilted stem (HPSS perc → spectral tilt → LUFS)
+# Same wall-clock window as stem_dir_clip (t=30–60s) for A/B listen.
+# Full material: out/stems/Dir/event_sculpt/tilt/perc_tilt_high.wav
+# Note: 502 adaptive peaks used K-weight mono of this material
+#   (perc_tilt_k_env_material_mono.wav); this run is the tilted stem itself.
+
+track: clean_amt
+role: stem_dir_tilt_high
+
+input:
+  path: out/stems/Dir/event_sculpt/tilt/perc_tilt_high.wav
+  gt_midi: null
+  start_s: 30.0
+  end_s: 60.0
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"
+
+provenance:
+  pipeline: Docs/dir_764_pipeline.md §2 (506)
+  chain: "bs_roformer/piano → HPSS perc → spectral_tilt → LUFS (−23) = perc_tilt_high"
+  peaks_on: "perc_tilt_high → mono → K-weight → SuperFlux adaptive → 502 ⊂ 506"

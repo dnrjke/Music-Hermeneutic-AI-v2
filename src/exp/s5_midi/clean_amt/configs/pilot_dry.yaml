@@ -1,0 +1,25 @@
+# Pilot: dry Bach WTC Martins LP clip (no GT)
+# Paths relative to repository root.
+
+track: clean_amt
+role: dry_bach
+
+input:
+  path: audio/midi_eval/dry_solo/bach_wtc_martins_lp_t120_60s.wav
+  gt_midi: null
+  start_s: 0.0
+  end_s: null
+
+preprocess:
+  mono: true
+  normalize: peak
+  hp_hz: null
+
+postprocess:
+  min_dur_s: 0.03
+  min_vel: 1
+  merge_ms: null
+  soft_quantize: false
+
+model_id: transkun
+model_version: "2.0.1"

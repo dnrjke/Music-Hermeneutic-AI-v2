@@ -1,0 +1,32 @@
+# Audit B: Basic Pitch on Dir piano (full stem windows) + 506 hit/miss
+track: clean_amt
+role: audit_basic_pitch_dir_piano_506
+
+input:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+# RO baselines (no package imports — path read)
+baselines:
+  fuse_notes: src/exp/s5_midi/midi_fuse/out/20260812_midi_fuse_clip_harmonic/notes.json
+  # clip file is 60s from stem start → onset times are absolute
+  transkun_notes: src/exp/s5_midi/clean_amt/out/20260812_clean_amt_transkun_stem_dir_clip/notes.json
+
+windows:
+  - start_s: 30.0
+    end_s: 60.0
+  - start_s: 60.0
+    end_s: 90.0
+
+tol_s: 0.05
+
+model_id: basic_pitch
+model_version: "0.4.0"
+
+preprocess:
+  mono: true
+  normalize: peak

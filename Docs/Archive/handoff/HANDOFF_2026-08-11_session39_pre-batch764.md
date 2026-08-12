@@ -1,28 +1,25 @@
-# HANDOFF — 2026-08-12 · s5 midi_fuse Dir 선율 go · 764 유지 · 506→피치 후속 비급
+# HANDOFF — 2026-08-10 · Dir 통합본 764 채택 (506∪전체_adaptive)
 
 이 문서는 **세션 경계 상태 + 연구 일지**다. 프로젝트 개요는 `README.md`.
 v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로젝트.
 
 **작업 이력의 전문은 아카이브에 있다** — `Docs/Archive/handoff/`.
-직전 스냅샷(세션 39까지 · Dir 764 채택 직후):
-[`Docs/Archive/handoff/HANDOFF_2026-08-11_session39_pre-batch764.md`](Docs/Archive/handoff/HANDOFF_2026-08-11_session39_pre-batch764.md).
-그 이전(세션 38 · Dir 통합본 764):
+직전 스냅샷(세션 38까지 · Dir 통합본 764):
 [`Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md`](Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md).
+그 이전(세션 11까지):
+[`Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md`](Docs/Archive/handoff/HANDOFF_2026-08-09_session11_a2-posdist395-bs-transcription.md).
 
 ---
 
 ## 0. 한 문단으로 — 지금 어디인가
 
-**s5 `midi_fuse`**: Dir 피아노를 MIDI로 옮긴다는 **당초 목적** 기준으로,
-산출물(특히 clip⊕harmonic · 풀길이 piano⊕harmonic)이 **선율을 괜찮은 수준으로 재현** → **go로 봄**.
-안내: [`src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md).
-
-**764 / 506**: 본선 통합본·배치 기준선 **유지**. 764는 원래 **사건(onset)을 읽는 도구**라
-MIDI화와 **목적이 다름**. 506→피치·via_764·event_pitch 후속은 **가능하나 비급**.
-후속 의의(할 때): (1) MIDI 품질 보강 (2) 764가 찍은 사건을 **실제 음으로 매칭**(소니파이적).
-
-**본선 4곡**은 block-gated adaptive 수렴·pipeline 통합 대기(변경 없음).  
-원곡 LPC→adaptive_plus는 **기각**(세션 41). Dir stem합의 **missed 2** 청취 미완 유지.
+**본선 4곡은 block-gated adaptive로 수렴, pipeline 통합 대기(변경 없음).**
+Dir **현 시점 통합본 = 764** (`506 ∪ Dir 전체_adaptive`, ±30ms).
+역할: **506 = 피아노 사건**, **전체_adaptive = 저역 비트·기타 구조적 사건**
+(단독 소니파이·비교 청취 근거). 피아노 전용 최선 클릭은 계속 **506**.
+**선결**: 764의 stem합의 **missed 2** 청취 판정
+(`stem_consensus_234_missed_by_764_*` / vs764 freqsep 산출됨).
+527(2k×21)·union∪miss3(615) miss-3는 보류 유지.
 
 ---
 
@@ -53,92 +50,62 @@ MIDI화와 **목적이 다름**. 506→피치·via_764·event_pitch 후속은 **
 ### s4_piano 상태
 
 > **기술 자문 보고서**: [`Docs/s4_piano_advisory.md`](Docs/s4_piano_advisory.md)  
-> **파이프라인 소개 (adaptive · 506 · 764)**: [`Docs/dir_764_pipeline.md`](Docs/dir_764_pipeline.md)  
-> **LPC rescue 실제 구조량**: [`Docs/lpc_rescue_contribution.md`](Docs/lpc_rescue_contribution.md)
+> **파이프라인 소개 (adaptive · 506 · 764)**: [`Docs/dir_764_pipeline.md`](Docs/dir_764_pipeline.md)
 
 **목표**: `102 - Dir.wav` — 피아노 건반 타건 전수 탐지.
 ODF **395**는 비교 기준선(작업 산출에 395 A/B 소니파이 없음).
 
-**Dir 통합본 (세션 38 채택, 유지) = 764**:
-`506 ∪ out/sonify/Dir/전체_adaptive_클릭` (n=679).
-공통 421 / 506-only 85 / adaptive-only 258. stem합의 cov **99.1%**,
-**missed 2** 청취 판정 **미완**.
+**pass2 / LPC 잔여 판정** (세션 14→21):
+- soft_gate_removed 기각; perc 클릭 3종은 병행 후보로 유지
+- LPC o12 residual: `rms_plain` 신뢰 가능; adaptive는 과거 최선이었으나
+  **세션 34에서 506에 양보**
 
-역할: **506 = 피아노**, **전체_adaptive = 저역·구조**. 피아노만 **506**.
+**Dir 통합본 (세션 38 채택) = 764**:
+`506 ∪ out/sonify/Dir/전체_adaptive_클릭` (SuperFlux+peaks_adaptive, n=679).
+공통 421 / 506-only 85 / adaptive-only 258. stem합의 cov **99.1%**(분모 234),
+**missed 2** (common 232).
 
-**세션 40 — 6곡 배치 이식** (`run_pipeline_764_batch.py`):
-대상 AS / FD / cry / GL / VN / SS.
-스템 `out/stems/{alias}/bs_roformer/`,
-소니파이 `out/sonify/pipeline_764_batch/{alias}/`
-(adaptive·506·764·only·common·piano-LPC rescue packs, low origmix ×0.20).
-피크 수는 Dir의 506/764가 아니라 **동명 파이프라인 계열**.
+청취 판정(역할 분담):
+- **506** — 피아노 건반 사건에 더 특화
+- **전체_adaptive** — 저역 비트·다른 구조적 사건에 더 특화
+- 단독 소니파이도 청취 후 위 역할을 확정; 통합본으로 **764** 채택
 
-| alias | adaptive | 506 | 764 | piano agree_only |
-|-------|---------:|----:|----:|-----------------:|
-| AS | 2270 | 411 | 2318 | 44 |
-| FD | 2311 | 733 | 2516 | 106 |
-| cry | 809 | 256 | 855 | 25 |
-| GL | 684 | 461 | 779 | **116** |
-| VN | 1208 | 503 | 1364 | 1 |
-| SS | 702 | 476 | 866 | 5 |
-| Dir(참조) | 679 | 506 | 764 | 4 |
+소니파이(대표):
+- piano low: `…/cmp506_vs_dirAdaptive_low_g0p20_{unified3k|freqsep}_클릭_p764_*.wav`
+- 원곡 bed: `…/cmp506_vs_dirAdaptive_origmix_{raw|lufs}_g{1p00|0p20}_{unified3k|freqsep}_*.wav`
+  (`origmix_g*` = raw 별칭; `lufs` = `load_mono`/TARGET_LUFS = `전체_adaptive_클릭`과 동일 레벨 처리)
 
-**LPC 관찰**: 피아노 스템 LPC rescue는 GL·FD에서 큼.
-다만 agree_only 대다수는 전체_adaptive와 시간 겹침 → 764 순수 신규는 곡당 0–6점대
-(`lpc_rescue_contribution.md`).
+**피아노 전용 최선 클릭 (세션 34, 유지)**:
+`…/fusion_kenv_agree_only_on_piano_클릭_p506.wav`
+(+ low / freqsep `…_p506*`)
 
-**시험 팩**:
+정의: `perc_tilt_k_env_adaptive`(502) ∪ LPC-order agreement 전용(±30ms 밖) **4**점.
+**2k o12-deburst(21) 제외.**
 
-1. **GL o12 대체** (`GL/o12_instead_of_agree/`):
-   agreement 대신 o12(±30ms 밖 + 100ms deburst) → fusion 523 / 764 808
-   — 청취·채택 여부 **미결** (참고 산출 유지).
-2. **원곡 LPC → adaptive_plus** (`{alias}/adaptive_orig_lpc_agree/`):
-   **기각 (세션 41).** 저역 반응은 있으나 정확한 저역 사건 포착이 아님
-   → **링잉/잔여 반응**으로 해석. 기존 764(`506 ∪ 전체_adaptive`) 유지.
-   산출 WAV·매니페스트는 비교 아카이브로 보관(파이프라인 미채용).
+**보류**: `fusion_kenv_agree_o12db_*_p527*` (2k×21 포함) — 유효/비유효 혼재.
+miss-3(`0:21.142`, `0:21.525`, `1:32.816`)·615 — 비치명/의미 보류.
 
-**보류(Dir)**: 527(2k×21), miss-3·615.  
-**신뢰 기준선**: `lpc_o12_residual_rms_plain_클릭` (181).
+**신뢰 기준선**:
+`…/lpc_o12_residual_rms_plain_클릭.wav` (181)
+
+**이전 틸트 단독**:
+`perc_tilt_k_env_adaptive` 502 / `perc_tilt_k_env` 340
 
 **s4 다음 단계**:
 
-1. **선결(Dir)**: 764 stem합의 **missed 2** 판정
-2. Dir·배치 모두 **기존 764/506** 기준선 유지
-3. (선택) GL o12 대체 팩 청취 — 필요 시에만
-4. 527·miss-3 보류 유지
+1. **선결**: 764 stem합의 **missed 2** 청취 판정
+   (`…/stem_consensus_234_missed_by_764_low_g0p20_클릭_p2.wav`,
+   `…/stem_consensus_234_vs764_low_*_freqsep_…`; 표:
+   `pass2/consensus_coverage/stem_consensus_234_sonify.md`)
+2. **764**를 Dir 통합 기준선으로 유지; 피아노만 볼 때는 **506**
+3. 필요 시 395-only·(506∪395) miss-3 등 추가 보강은 별도 청취 후
+4. 527의 2k×21은 보류 유지
 
 **B-2 CQT 판정: 기각.** 세션 5 참조.
-
-### s5_midi — 피아노 → MIDI (2026-08-12)
-
-코드: [`src/exp/s5_midi/`](src/exp/s5_midi/) · 상위 [`README`](src/exp/s5_midi/README.md)
-
-| 트랙 | 판정 | 한 줄 |
-|------|------|--------|
-| **`midi_fuse`** | **go (목적 달성)** | clip⊕harmonic(30–60) + **풀길이** piano⊕harmonic. Dir 선율 MIDI화에 충분. [`MIDI_GUIDE`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md) |
-| `clean_amt` | M1 닫음 | Transkun 다층 역할 · GT/dry go · 단일 스템 납품 no |
-| `stem_norm` | no-go | duck/저역 blend 악화 |
-| `via_764` | D1 no-go · **비급** | 506 onset 골격만. 피치 채움 실패. 764=사건 도구 ≠ MIDI 본선 |
-| `event_pitch` | E1–E12 추정기 no-go · **비급** | 추론 피치 금지 교훈. BP 감사: 30–60에서 506 rescue 신규 0 |
-
-**후속(비급) 의의**: MIDI 품질 보강 + 764 이벤트를 음으로 매칭(소니파이).  
-자작 온셋조건 피치·다른 AMT 탐색은 메모만 — 급하지 않음.
 
 ### 소니파이 파일 현황
 
 ```
-out/sonify/pipeline_764_batch/     ← 세션 40 · 6곡 Dir-style 배치
-  {AS,FD,cry,GL,VN,SS}/
-    *_전체_adaptive_* / *_506_* / *_764_* / *_only_* / *_common_*
-    *_lpc_agree_only_* / *_764_lpcRescue5k_freqsep_*   # piano-stem LPC
-    o12_instead_of_agree/          # GL only · agreement→o12db
-    adaptive_orig_lpc_agree/       # 원곡 LPC→adaptive · 기각(세션41) · 보관만
-  batch_summary.json
-  adaptive_orig_lpc_agree_batch_summary.json
-
-out/stems/{alias}/bs_roformer/     ← 세션 40 BS piano (6곡)
-out/stems/{alias}/event_sculpt/pipeline_detect_manifest.json
-
 out/sonify/{트랙}/            ← 본선 4곡
   # 세션 2
   전체_1차탐지_클릭.wav    — Otsu base (3kHz)
@@ -200,7 +167,6 @@ out/sonify/Dir/              ← s4 피아노 실험
   전체_a2_posdist_rescue_클릭.wav         395  A-2 보존+positive rescue
   posdist_metrics.json
   전체_stem_*_piano_candidate395_클릭.wav    3모델 piano stem 위 395
-  전체_adaptive_클릭.wav              679  ★ Dir 구조 축 (세션 37–38)
   전체_stem_support395_비교_클릭.wav         3/3=117, 2/3=76, 0-1/3=202
   전체_stem_consensus_missed_클릭.wav        42
   전체_bs_reference_vs_candidate395_비교_클릭.wav
@@ -258,47 +224,11 @@ out/stems/Dir/
 
 ## 2. 세션 이력
 
-### 세션 41 (2026-08-12) — 원곡 LPC→adaptive 기각 · 764 유지
-
-**판정**: 원본(원곡) LPC agreement를 전체_adaptive에 얹는 방식 **미채용**.
-- 저역 신호에 *반응*하는 것은 맞음.
-- 다만 저역 신호의 **정확한 사건**을 포착하지 못함 → **링잉/잔여 반응**으로 해석.
-- 따라서 **기존 764** (`506 ∪ 전체_adaptive`)를 유지.
-- 산출 `…/adaptive_orig_lpc_agree/`는 비교용 보관, 파이프라인 미편입.
-
-### 세션 40 (2026-08-11) — 6곡 764 배치 · LPC rescue 문서 · 원곡 LPC→adaptive
-
-**배치 이식** (`run_pipeline_764_batch.py`):
-Dir 3층(전체_adaptive / 506=kenv∪piano-agree / 764)을
-AS·FD·cry·GL·VN·SS에 적용. BS-Roformer piano → detect →
-low origmix(×0.20) 소니파이.
-산출 루트: `out/sonify/pipeline_764_batch/`, 스템 `out/stems/{alias}/`.
-
-추가 소니파이: `common`, piano `lpc_agree_only`,
-`764_lpcRescue5k_freqsep` (LPC=5k).
-
-**문서**: [`Docs/lpc_rescue_contribution.md`](Docs/lpc_rescue_contribution.md)
-— agree_only가 실제 LPC 구조량; GL·FD 큼, VN·SS·Dir 미미;
-764 순수 LPC 신규는 곡당 0–6점대. `dir_764_pipeline.md`에 링크.
-
-**GL o12 대체** (`GL/o12_instead_of_agree/`):
-agreement 대신 o12(±30ms 밖 + 100ms deburst) → fusion 523 / 764 808.
-
-**원곡 LPC→adaptive** (`run_adaptive_orig_lpc_agree.py`,
-`{alias}/adaptive_orig_lpc_agree/`):
-원곡 LPC all-six agreement 중 adaptive 밖만 추가 → adaptive_plus →
-`764 = 기존506 ∪ adaptive_plus`. AS +88 최대, GL +12.
-→ **세션 41에서 기각** (링잉/잔여 반응).
-
-Dir missed-2·527·miss-3 상태 변경 없음.
-
 ### 세션 39 (2026-08-10) — HANDOFF 아카이브
 
 세션 38 시점 HANDOFF를
 `Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md`
 로 스냅샷. 라이브 `HANDOFF.md`의 직전 스냅샷 포인터를 갱신.
-(세션 40 시작 시 라이브를
-`HANDOFF_2026-08-11_session39_pre-batch764.md`로 추가 스냅샷.)
 
 ### 세션 38 (2026-08-10) — Dir 통합본 764 채택 (역할 분담)
 
@@ -1322,9 +1252,7 @@ src/exp/s4_piano/   13개 — 세션 4-9 (Dir 피아노 onset)
   _diag_periodicity.py  — 등간격 비트 주기성 진단 (리듬 격자 확인)
   stem_validation/      — 3-model piano stem 분리·합의·소니파이·검증
     transcription/      — Transkun/Basic Pitch 독립 전사·평가·소니파이·검증
-  stem_event_sculpt/    — Dir 506/764; 세션 40 배치·원곡 LPC 러너
-    run_pipeline_764_batch.py          — 6곡 adaptive/506/764 배치
-    run_adaptive_orig_lpc_agree.py     — 원곡 LPC→adaptive_plus→764
+  stem_event_sculpt/    — tilt v2 잠금; A/B percept 러너 청취 대기
 ```
 
 ---
@@ -1354,7 +1282,6 @@ GPU            RTX 3080 10 GB
 콘솔 cp932 — 한글 출력은 `reconfigure(encoding="utf-8")`.
 오디오: v2/audio/ 우선, v1 `audio/target/` 폴백.
 대상 4곡: cry of viyella, Grievous Lady, Viyella's Nightmare, Swift Swing.
-세션 40 배치 추가: Angelic Sphere (AS), FREEDOM DiVE (FD) — `v2/audio/`.
 
 ---
 

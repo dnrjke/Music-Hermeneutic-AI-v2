@@ -1,0 +1,41 @@
+# event_pitch E2 — Basic Pitch frame activation @ 506 times (Dir pilot)
+track: event_pitch
+stage: E2
+role: dir_506_bp_frame_pilot
+
+peaks:
+  manifest: out/stems/Dir/event_sculpt/pass2/lpc_sf_adaptive_on_piano/fusion_kenv_agree_o12db_on_piano_manifest.json
+  key: conservative_kenv_agree_only
+  expect_n: 506
+
+audio:
+  path: out/stems/Dir/bs_roformer/piano.wav
+
+pilot:
+  start_s: 30.0
+  end_s: 60.0
+  # clip pad so BP sees context; times remapped to abs
+  clip_pad_s: 2.0
+
+pitch:
+  method: basic_pitch_frame
+  # average note activations over this post-onset window, then argmax
+  delay_s: 0.010
+  post_s: 0.093
+  # optional: multiply by onset activation (onset-conditioned)
+  use_onset_gate: true
+  fallback_pitch: 60
+  midi_min: 21
+  midi_max: 108
+
+note_off:
+  policy: next_onset_cap
+  gap_s: 0.01
+  max_dur_s: 1.0
+  min_dur_s: 0.04
+
+velocity:
+  rms_to_vel_min: 40
+  rms_to_vel_max: 110
+  pre_s: 0.02
+  post_s: 0.10
