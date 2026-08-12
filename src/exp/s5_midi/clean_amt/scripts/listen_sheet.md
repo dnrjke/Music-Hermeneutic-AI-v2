@@ -128,7 +128,7 @@ onset ±50ms로 clip에 붙인 norm 노트: 448/451 · 같은 pitch 390 · ±12�
 
 | 버전 | go/no-go | 메모 |
 |------|----------|------|
-| clip⊕harmonic | **go · 잠금** | 놓친 사건 rescue · **더 원곡에 가깝게** 들림. 나중에 sort/편집이 필요해도 이 판단 유지. 현 산출 최선. |
+| clip⊕harmonic | **go · 잠금** | Transkun **짧은 노트** → harmonic으로 **길이·밀도 보완(rescue)**. 실제 사건 증가=**미검토**. **당장 근거=감상**. (원곡감·풍성함) |
 | clip⊕synthesis | 보류 | rescue 12음 low-piano 클릭으로 별도 판정 (본선 교체 아님) |
 
 ### rescue-only 소니파이 (low piano ×0.20 · 3kHz 클릭)
@@ -144,5 +144,6 @@ onset ±50ms로 clip에 붙인 norm 노트: 448/451 · 같은 pitch 390 · ±12�
 
 ## 자유 메모
 
-- 우위 clip vs harmonic — **clip⊕harmonic go 잠금** (sort는 후처리; 원곡감·누락 rescue 우선).
+- 우위 clip vs harmonic — **clip⊕harmonic go 잠금** (감상 우선; 사건 증분은 미검토; Transkun 짧은 노트 보완 목적 포함).
+- Basic Pitch: 왼손/배음 등으로 **풍성함** 인상(참고; 본선 go 아님).
 -
