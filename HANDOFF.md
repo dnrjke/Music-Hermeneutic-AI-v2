@@ -14,8 +14,8 @@ v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로�
 ## 0. 한 문단으로 — 지금 어디인가
 
 **s5 `midi_fuse`**: Dir 피아노를 MIDI로 옮긴다는 **당초 목적** 기준으로,
-산출물(특히 clip⊕harmonic · 풀길이 piano⊕harmonic)이 **선율을 괜찮은 수준으로 재현** → **go로 봄**.
-안내: [`src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md).
+산출물(특히 clip⊕harmonic · 전곡 **전체_piano_harmonic**)이 **선율을 괜찮은 수준으로 재현** → **go로 봄**.  
+파이프라인: [`Docs/dir_piano_harmonic_midi_pipeline.md`](Docs/dir_piano_harmonic_midi_pipeline.md) · 청취: [`MIDI_GUIDE`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md).
 
 **harmonic·부가 기법 채택 (중요)**:
 - Transkun mid는 **노트 길이가 짧은** 편 → 다른 층/기법을 얹는 목적에 **길이·밀도 보완(이것도 rescue)** 이 있음.
@@ -62,6 +62,7 @@ MIDI화와 **목적이 다름**. 506→피치·via_764·event_pitch 후속은 **
 
 > **기술 자문 보고서**: [`Docs/s4_piano_advisory.md`](Docs/s4_piano_advisory.md)  
 > **파이프라인 소개 (adaptive · 506 · 764)**: [`Docs/dir_764_pipeline.md`](Docs/dir_764_pipeline.md)  
+> **Dir MIDI (전체_piano_harmonic)**: [`Docs/dir_piano_harmonic_midi_pipeline.md`](Docs/dir_piano_harmonic_midi_pipeline.md)  
 > **LPC rescue 실제 구조량**: [`Docs/lpc_rescue_contribution.md`](Docs/lpc_rescue_contribution.md)
 
 **목표**: `102 - Dir.wav` — 피아노 건반 타건 전수 탐지.
@@ -123,7 +124,7 @@ ODF **395**는 비교 기준선(작업 산출에 395 A/B 소니파이 없음).
 
 | 트랙 | 판정 | 한 줄 |
 |------|------|--------|
-| **`midi_fuse`** | **go (목적 달성)** | clip⊕harmonic + 풀길이. Transkun은 **노트 짧음** → harmonic 등은 **rescue·길이/밀도 보완**(사건 증가 여부는 미검토). 선택 근거=**감상**. BP는 왼손/배음으로 풍성해 보임. [`MIDI_GUIDE`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md) |
+| **`midi_fuse`** | **go (목적 달성)** | 전곡 이름 **전체_piano_harmonic**(n=1753). [`dir_piano_harmonic_midi_pipeline`](Docs/dir_piano_harmonic_midi_pipeline.md) · [`MIDI_GUIDE`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md) |
 | `clean_amt` | M1 닫음 | Transkun 다층 역할 · GT/dry go · 단일 스템 납품 no |
 | `stem_norm` | no-go | duck/저역 blend 악화 |
 | `via_764` | D1 no-go · **비급** | 506 onset 골격만. 피치 채움 실패. 764=사건 도구 ≠ MIDI 본선 |

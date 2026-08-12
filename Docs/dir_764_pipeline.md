@@ -3,6 +3,7 @@
 > 2026-08-10 · 대상: `102 - Dir.wav`  
 > 현 시점 Dir **통합본 = 764** (`506 ∪ 전체_adaptive`).  
 >  Continuity: [`HANDOFF.md`](../HANDOFF.md) · 자문 배경: [`s4_piano_advisory.md`](s4_piano_advisory.md) · LPC rescue 양: [`lpc_rescue_contribution.md`](lpc_rescue_contribution.md)
+> Dir **MIDI**(별 축): [dir_piano_harmonic_midi_pipeline.md](dir_piano_harmonic_midi_pipeline.md) — **전체_piano_harmonic**
 
 이 문서는 Dir에서 쓰는 **세 층**을 소개한다.
 

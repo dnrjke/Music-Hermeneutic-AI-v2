@@ -29,7 +29,7 @@
   - **실제 사건 증가 여부는 미검토** · 당장 근거는 **감상**  
     (“듣기 좋다” = **원곡을 해치지 않고 더 재현**한다고 해석)  
 - `fuse_clip_synthesis` — rescue = lpc_synthesis · 30–60  
-- **`fuse_piano_harmonic_full`** — 같은 규칙 · **풀 스템**
+- **`fuse_piano_harmonic_full`** → 산출 별칭 **전체_piano_harmonic** (n=1753) · 문서 [`Docs/dir_piano_harmonic_midi_pipeline.md`](../../../../Docs/dir_piano_harmonic_midi_pipeline.md)
 
 **초점**: 감상용 MIDI 전사. 링잉·사건 연구는 `piano_base_only` (harmonic 없음).  
 **BP**: 왼손/배음 등으로 풍성해 보임 — 참고 인상(본선 go 아님).

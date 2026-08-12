@@ -10,7 +10,7 @@
 |------|------|--------|
 | [`clean_amt/`](clean_amt/) | **M1 닫음** — GT/dry go · Dir 다층 역할표 · 단일 mid 납품 no | [`Docs/piano_stem_to_midi_plan_cursor_grok_4.5.md`](../../../Docs/piano_stem_to_midi_plan_cursor_grok_4.5.md) |
 | [`stem_norm/`](stem_norm/) | **v1 no-go** — duck+저역 blend → 피치·고역 악화 | listen_sheet 런 G |
-| [`midi_fuse/`](midi_fuse/) | **go (감상용 Dir MIDI)** — Transkun 짧은 노트 → harmonic 등으로 **길이·밀도 rescue**. 사건 증가=미검토 · 근거=감상. BP는 풍성함 참고. [`MIDI_GUIDE.md`](midi_fuse/MIDI_GUIDE.md) | listen_sheet 런 H |
+| [`midi_fuse/`](midi_fuse/) | **go · 전체_piano_harmonic** — [`dir_piano_harmonic_midi_pipeline.md`](../../../Docs/dir_piano_harmonic_midi_pipeline.md) · [`MIDI_GUIDE.md`](midi_fuse/MIDI_GUIDE.md) | listen_sheet 런 H |
 | [`event_pitch/`](event_pitch/) | E1–E12 추정기 **no-go** · 후속 **비급** (MIDI 보강·764↔음 매칭 의의) | [`Docs/piano_event_pitch_plan_cursor_grok_4.5.md`](../../../Docs/piano_event_pitch_plan_cursor_grok_4.5.md) |
 | [`via_764/`](via_764/) | D1 피치 **no-go** · **비급** — 764는 사건 도구(목적≠MIDI 본선) | [`Docs/piano_midi_via_dir764_plan_cursor_grok_4.5.md`](../../../Docs/piano_midi_via_dir764_plan_cursor_grok_4.5.md) |
 ## 입력 (읽기 전용)

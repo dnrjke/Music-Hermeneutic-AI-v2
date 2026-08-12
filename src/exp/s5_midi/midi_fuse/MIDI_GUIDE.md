@@ -10,9 +10,12 @@
 | 목적 | 파일 |
 |------|------|
 | **정식 go (30–60s)** | [`out/20260812_midi_fuse_clip_harmonic/piano.mid`](out/20260812_midi_fuse_clip_harmonic/piano.mid) |
-| **전곡 버전** (같은 방법론) | [`out/20260812_midi_fuse_piano_harmonic_full/piano.mid`](out/20260812_midi_fuse_piano_harmonic_full/piano.mid) |
+| **전곡 go · 전체_piano_harmonic** | [`out/20260812_midi_fuse_piano_harmonic_full/piano.mid`](out/20260812_midi_fuse_piano_harmonic_full/piano.mid) |
 | 60–90만 바로 재생 | [`…/piano_harmonic_full/piano_t60_90_listen_t0.mid`](out/20260812_midi_fuse_piano_harmonic_full/piano_t60_90_listen_t0.mid) |
 | 링잉·사건 연구용 (비급) | `piano_base_only.mid` / `piano_base_t60_90_listen_t0.mid` — **harmonic 없는** piano Transkun |
+
+파이프라인 문서: [`Docs/dir_piano_harmonic_midi_pipeline.md`](../../../../Docs/dir_piano_harmonic_midi_pipeline.md)  
+(본선 **piano_Transkun** ⊕ rescue **harmonic_Transkun** → **전체_piano_harmonic**)
 
 ### harmonic·부가를 왜 넣었나 (채택 이유)
 
@@ -52,12 +55,12 @@
 
 ---
 
-## 3. piano ⊕ harmonic — 풀 길이 (같은 방법론)
+## 3. 전체_piano_harmonic — 풀 길이 (전곡 go)
 
-폴더: `out/20260812_midi_fuse_piano_harmonic_full/`
+폴더: `out/20260812_midi_fuse_piano_harmonic_full/` · 문서명 **전체_piano_harmonic** (n=1753)
 
-본선 = **풀 스템** 피아노 Transkun · rescue = **풀** HPSS harmonic Transkun.  
-(파일럿 go의 “clip” 대신 전곡 piano를 쓴 확장판. 규칙(±30ms)은 동일.)
+본선 = **piano_Transkun** · rescue = **harmonic_Transkun**.  
+(파일럿 **clip⊕harmonic**과 같은 fuse_v1 · 입력만 풀 스템.)
 
 ### 전곡 / 큰 파일
 
