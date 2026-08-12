@@ -12,6 +12,13 @@
 | **정식 go (30–60s)** | [`out/20260812_midi_fuse_clip_harmonic/piano.mid`](out/20260812_midi_fuse_clip_harmonic/piano.mid) |
 | **전곡 버전** (같은 방법론) | [`out/20260812_midi_fuse_piano_harmonic_full/piano.mid`](out/20260812_midi_fuse_piano_harmonic_full/piano.mid) |
 | 60–90만 바로 재생 | [`…/piano_harmonic_full/piano_t60_90_listen_t0.mid`](out/20260812_midi_fuse_piano_harmonic_full/piano_t60_90_listen_t0.mid) |
+| 링잉·사건 연구용 (비급) | `piano_base_only.mid` / `piano_base_t60_90_listen_t0.mid` — **harmonic 없는** piano Transkun |
+
+### harmonic을 왜 넣었나 (채택 이유)
+
+**실제 사건을 더 잡아서가 아니다.** 청취했을 때 **그냥 더 듣기 좋아서** clip⊕harmonic을 골랐다.  
+추가분이 링잉/배음일 수 있다고 보면, 깊이 있는 연구는 **harmonic 없이** Transkun(piano only)으로 가는 게 맞다.  
+**지금 초점**은 곡을 MIDI로 옮겨 **감상**하는 것 — 사건 과학이 아님.
 
 `*_listen_t0.mid` = 해당 구간을 **0초부터** 들리게 옮긴 것 (재생헤드를 밀 필요 없음).  
 이름에 `listen_t0`이 없는 `piano.mid`는 **원곡 절대시각** (30–60 구간이면 처음 30초는 무음일 수 있음).
@@ -28,7 +35,7 @@
 
 - 구간: 원곡 **30–60초**만 (파일 안 시각도 절대시각 ≈ 30부터).
 - 노트 수: 491 (본선 유지 + harmonic에서 37개 추가).
-- 대조(synthesis rescue): 아래 §2. **채택은 harmonic 쪽.**
+- **채택 이유**: 사건 증분이 아니라 **청취 품질**(더 듣기 좋음). 대조(synthesis): §2.
 
 ---
 

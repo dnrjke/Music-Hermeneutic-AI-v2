@@ -24,10 +24,11 @@
 같은 pitch 가 본선에 `|onset_diff| ≤ 30ms` 이면 스킵.  
 아니면 rescue 노트를 추가 (`source` 태그).
 
-- `fuse_clip_harmonic` — rescue = hpss_harmonic · **창 30–60만** (go 잠금)  
+- `fuse_clip_harmonic` — rescue = hpss_harmonic · **창 30–60만** (**go** · 청취상 더 듣기 좋아서 채택; **사건 추가 입증 아님**)  
 - `fuse_clip_synthesis` — rescue = lpc_synthesis · 30–60  
 - **`fuse_piano_harmonic_full`** — 같은 규칙 · **풀 스템** (piano Transkun ⊕ hpss_harmonic Transkun)
 
+**초점**: 감상용 MIDI 전사. 링잉으로 파고들 때는 `piano_base_only` (harmonic 없음) 쪽이 연구 경로.
 duration/onset 스냅·삭제(고스트 제거)는 v1 비범위.
 
 ## 실행

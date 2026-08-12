@@ -17,6 +17,10 @@ v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로�
 산출물(특히 clip⊕harmonic · 풀길이 piano⊕harmonic)이 **선율을 괜찮은 수준으로 재현** → **go로 봄**.
 안내: [`src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md).
 
+**harmonic rescue 채택 이유 (중요)**: “실제 사건을 더 잡아서”가 **아님**.  
+청취상 **더 듣기 좋아서** 채택. 링잉으로 보고 깊게 파려면 그때는 **harmonic 없이**
+piano Transkun만으로 연구하는 편이 맞음. **당장은 곡→MIDI 전사·감상이 초점.**
+
 **764 / 506**: 본선 통합본·배치 기준선 **유지**. 764는 원래 **사건(onset)을 읽는 도구**라
 MIDI화와 **목적이 다름**. 506→피치·via_764·event_pitch 후속은 **가능하나 비급**.
 후속 의의(할 때): (1) MIDI 품질 보강 (2) 764가 찍은 사건을 **실제 음으로 매칭**(소니파이적).
@@ -115,7 +119,7 @@ ODF **395**는 비교 기준선(작업 산출에 395 A/B 소니파이 없음).
 
 | 트랙 | 판정 | 한 줄 |
 |------|------|--------|
-| **`midi_fuse`** | **go (목적 달성)** | clip⊕harmonic(30–60) + **풀길이** piano⊕harmonic. Dir 선율 MIDI화에 충분. [`MIDI_GUIDE`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md) |
+| **`midi_fuse`** | **go (목적 달성)** | clip⊕harmonic(30–60) + **풀길이** piano⊕harmonic. Dir 선율 MIDI화에 충분. [`MIDI_GUIDE`](src/exp/s5_midi/midi_fuse/MIDI_GUIDE.md). **harmonic은 ‘사건 추가’가 아니라 청취상 더 듣기 좋아서 채택** — 링잉 연구 시엔 piano-only Transkun으로. 당장은 감상용 전사 초점. |
 | `clean_amt` | M1 닫음 | Transkun 다층 역할 · GT/dry go · 단일 스템 납품 no |
 | `stem_norm` | no-go | duck/저역 blend 악화 |
 | `via_764` | D1 no-go · **비급** | 506 onset 골격만. 피치 채움 실패. 764=사건 도구 ≠ MIDI 본선 |
