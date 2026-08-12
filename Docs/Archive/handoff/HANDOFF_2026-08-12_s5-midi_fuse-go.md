@@ -4,10 +4,10 @@
 v1 프로젝트(`E:\game\Music Hermeneutic AI\`)와는 독립된 후속 프로젝트.
 
 **작업 이력의 전문은 아카이브에 있다** — `Docs/Archive/handoff/`.
-직전 스냅샷(2026-08-12 · s5 midi_fuse Dir 선율 go · harmonic=감상·짧은노트 보완):
-[`Docs/Archive/handoff/HANDOFF_2026-08-12_s5-midi_fuse-go.md`](Docs/Archive/handoff/HANDOFF_2026-08-12_s5-midi_fuse-go.md).
-그 이전(세션 39까지 · Dir 764 채택 직후):
+직전 스냅샷(세션 39까지 · Dir 764 채택 직후):
 [`Docs/Archive/handoff/HANDOFF_2026-08-11_session39_pre-batch764.md`](Docs/Archive/handoff/HANDOFF_2026-08-11_session39_pre-batch764.md).
+그 이전(세션 38 · Dir 통합본 764):
+[`Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md`](Docs/Archive/handoff/HANDOFF_2026-08-10_session38_dir-union764-506-adaptive.md).
 
 ---
 
@@ -298,12 +298,6 @@ agreement 대신 o12(±30ms 밖 + 100ms deburst) → fusion 523 / 764 808.
 → **세션 41에서 기각** (링잉/잔여 반응).
 
 Dir missed-2·527·miss-3 상태 변경 없음.
-
-### 2026-08-12 — HANDOFF 아카이브 (s5 midi_fuse go)
-
-라이브 HANDOFF(s5 midi_fuse Dir 선율 go · harmonic=감상·짧은노트 보완 · 764/피치 후속 비급)를
-`Docs/Archive/handoff/HANDOFF_2026-08-12_s5-midi_fuse-go.md`로 스냅샷.
-라이브 `HANDOFF.md`의 직전 스냅샷 포인터를 이 파일로 갱신.
 
 ### 세션 39 (2026-08-10) — HANDOFF 아카이브
 
